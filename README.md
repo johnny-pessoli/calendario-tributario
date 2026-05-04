@@ -45,6 +45,24 @@ Depois acesse:
 http://localhost:8000
 ```
 
+## Incorporacao em SharePoint
+
+A pagina detecta quando esta dentro de um `iframe` e ativa automaticamente um modo compacto para evitar corte horizontal.
+
+Exemplo recomendado:
+
+```html
+<iframe
+  src="https://johnny-pessoli.github.io/calendario-tributario/"
+  width="100%"
+  height="950"
+  frameborder="0"
+  scrolling="auto">
+</iframe>
+```
+
+Se o SharePoint limitar a largura do bloco, a tabela reduz a largura minima e compacta as celulas para se ajustar ao espaco disponivel.
+
 ## Automacao de atualizacoes oficiais
 
 O projeto inclui uma automacao para monitorar fontes oficiais do governo brasileiro e destacar mudancas que possam impactar prazos tributarios.

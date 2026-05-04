@@ -1,4 +1,8 @@
 (() => {
+  if (window.self !== window.top) {
+    document.documentElement.classList.add('embedded');
+  }
+
   const categoryButtons = document.querySelectorAll('.leg[data-filter-category]');
   const regimeButtons = document.querySelectorAll('.leg[data-filter-regime]');
   const rows = document.querySelectorAll('tbody tr[data-category]');

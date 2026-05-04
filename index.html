@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self' 'unsafe-inline'; img-src 'self' data:; object-src 'none'; base-uri 'self'; form-action 'self'; frame-ancestors 'none'; upgrade-insecure-requests">
+<meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self' 'unsafe-inline'; img-src 'self' data:; object-src 'none'; base-uri 'self'; form-action 'self'; upgrade-insecure-requests">
 <title>Calendário de Vencimentos Tributários — Brasil</title>
 <style>
   :root {
@@ -46,6 +46,16 @@
     max-width: 1180px;
     margin-left: auto;
     margin-right: auto;
+  }
+
+  html.embedded body {
+    overflow-x: hidden;
+    padding: 12px 10px 22px;
+  }
+
+  html.embedded body > * {
+    max-width: 100%;
+    width: 100%;
   }
 
   /* ── HERO ── */
@@ -318,6 +328,91 @@
     min-width: 920px;
     border-collapse: collapse;
     table-layout: fixed;
+  }
+
+  html.embedded .wrap {
+    overflow-x: hidden;
+  }
+
+  html.embedded table {
+    min-width: 0;
+  }
+
+  html.embedded thead th {
+    font-size: 0.72rem;
+    padding: 11px 8px;
+  }
+
+  html.embedded thead th:first-child,
+  html.embedded .row-head {
+    width: 128px;
+  }
+
+  html.embedded tbody td {
+    padding: 10px 8px;
+  }
+
+  html.embedded .tag {
+    font-size: 0.68rem;
+    line-height: 1.48;
+    padding: 8px;
+  }
+
+  html.embedded .tag .sub {
+    font-size: 0.61rem;
+    line-height: 1.45;
+  }
+
+  html.embedded .day {
+    font-size: 0.72rem;
+    min-height: 30px;
+    min-width: 34px;
+    padding: 6px 9px;
+  }
+
+  html.embedded .hero,
+  html.embedded .filters,
+  html.embedded .search-panel,
+  html.embedded .reforma,
+  html.embedded .official-updates,
+  html.embedded .wrap,
+  html.embedded .anuais-wrap {
+    margin-bottom: 12px;
+  }
+
+  html.embedded .hero h1 {
+    font-size: 1.22rem;
+  }
+
+  html.embedded .hero p {
+    font-size: 0.72rem;
+  }
+
+  html.embedded .filter-group {
+    justify-content: flex-start;
+  }
+
+  html.embedded .filter-label {
+    text-align: left;
+  }
+
+  html.embedded .leg {
+    border-radius: 8px;
+    font-size: 0.68rem;
+    padding: 6px 9px;
+  }
+
+  html.embedded .search-panel {
+    padding: 10px;
+  }
+
+  html.embedded .tax-search {
+    font-size: 0.78rem;
+    padding: 9px 10px;
+  }
+
+  html.embedded .clear-search {
+    font-size: 0.72rem;
   }
 
   /* Cabeçalho */
