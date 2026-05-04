@@ -97,8 +97,25 @@
     font-weight: 600;
     color: #374151;
     line-height: 1.35;
+    font-family: inherit;
+    cursor: pointer;
+    transition: background 0.2s ease, border-color 0.2s ease, color 0.2s ease, transform 0.2s ease;
+    appearance: none;
+  }
+  .leg:hover,
+  .leg:focus-visible {
+    border-color: var(--dark);
+    color: var(--dark);
+    outline: none;
+    transform: translateY(-1px);
+  }
+  .leg.is-active {
+    background: var(--dark);
+    border-color: var(--dark);
+    color: #fff;
   }
   .dot { width: 10px; height: 10px; border-radius: 50%; flex-shrink: 0; }
+  .is-hidden { display: none !important; }
 
   /* ── REFORMA BANNER ── */
   .reforma {
@@ -496,12 +513,13 @@
 
 <!-- LEGENDA -->
 <div class="legenda">
-  <div class="leg"><div class="dot" style="background:var(--federal)"></div>🏛 Federal</div>
-  <div class="leg"><div class="dot" style="background:var(--trab)"></div>💼 Trabalhista / Prev.</div>
-  <div class="leg"><div class="dot" style="background:var(--estadual)"></div>🏢 Estadual</div>
-  <div class="leg"><div class="dot" style="background:var(--municipal)"></div>🏙️ Municipal</div>
-  <div class="leg"><div class="dot" style="background:var(--simples)"></div>🟦 Simples / MEI</div>
-  <div class="leg"><div class="dot" style="background:var(--anual)"></div>📌 Anual / Específico</div>
+  <button class="leg is-active" type="button" data-filter="todos" aria-pressed="true"><span class="dot" style="background:var(--dark)"></span>Todos</button>
+  <button class="leg" type="button" data-filter="federal" aria-pressed="false"><span class="dot" style="background:var(--federal)"></span>🏛 Federal</button>
+  <button class="leg" type="button" data-filter="trab" aria-pressed="false"><span class="dot" style="background:var(--trab)"></span>💼 Trabalhista / Prev.</button>
+  <button class="leg" type="button" data-filter="estadual" aria-pressed="false"><span class="dot" style="background:var(--estadual)"></span>🏢 Estadual</button>
+  <button class="leg" type="button" data-filter="municipal" aria-pressed="false"><span class="dot" style="background:var(--municipal)"></span>🏙️ Municipal</button>
+  <button class="leg" type="button" data-filter="simples" aria-pressed="false"><span class="dot" style="background:var(--simples)"></span>🟦 Simples / MEI</button>
+  <button class="leg" type="button" data-filter="anual" aria-pressed="false"><span class="dot" style="background:var(--anual)"></span>📌 Anual / Específico</button>
 </div>
 
 <!-- TABELA -->
@@ -520,7 +538,7 @@
 <tbody>
 
 <!-- ══ TRABALHISTA ══ -->
-<tr>
+<tr data-category="trab">
   <td class="row-head">💼 Trabalhista &amp;<br>Previdenciário</td>
   <td>—</td>
 
@@ -571,7 +589,7 @@
 </tr>
 
 <!-- ══ FEDERAL ══ -->
-<tr>
+<tr data-category="federal">
   <td class="row-head">🏛 Federal<br><span style="font-size:0.63rem;font-weight:400">Lucro Presumido / Real</span></td>
   <td>—</td>
   <td>—</td>
@@ -634,7 +652,7 @@
 </tr>
 
 <!-- ══ SIMPLES NACIONAL / MEI ══ -->
-<tr>
+<tr data-category="simples">
   <td class="row-head">🟦 Simples Nacional<br>&amp; MEI</td>
   <td>—</td>
   <td>—</td>
@@ -656,7 +674,7 @@
 </tr>
 
 <!-- ══ ESTADUAL ══ -->
-<tr>
+<tr data-category="estadual">
   <td class="row-head">🏢 Estadual<br><span style="font-size:0.63rem;font-weight:400">Varia por UF</span></td>
   <td>—</td>
   <td>—</td>
@@ -698,7 +716,7 @@
 </tr>
 
 <!-- ══ MUNICIPAL ══ -->
-<tr>
+<tr data-category="municipal">
   <td class="row-head">🏙️ Municipal<br><span style="font-size:0.63rem;font-weight:400">Varia por município</span></td>
   <td>—</td>
   <td>—</td>
@@ -740,7 +758,7 @@
 </div>
 
 <!-- ANUAIS -->
-<div class="anuais-wrap">
+<div class="anuais-wrap" data-category="anual">
   <div class="anuais-head">📌 Obrigações Anuais &amp; Específicas — Datas Fixas no Ano</div>
   <div class="anuais-body">
     <div class="tag-inline">31/jan<span class="sub">Opção Simples Nacional</span></div>
@@ -768,6 +786,38 @@
     <li>Fontes: <em>Receita Federal do Brasil · Caixa Econômica Federal · SEFAZ/SP · Escola Superior ESN · Davanzo Contabilidade · Stone Contabilidade · 2026.</em></li>
   </ul>
 </div>
+
+<script>
+  const filterButtons = document.querySelectorAll('.leg[data-filter]');
+  const rows = document.querySelectorAll('tbody tr[data-category]');
+  const annualSection = document.querySelector('.anuais-wrap[data-category="anual"]');
+  const tableWrap = document.querySelector('.wrap');
+
+  filterButtons.forEach((button) => {
+    button.addEventListener('click', () => {
+      const selected = button.dataset.filter;
+      const showAll = selected === 'todos';
+      const showAnnual = showAll || selected === 'anual';
+
+      filterButtons.forEach((item) => {
+        const isActive = item === button;
+        item.classList.toggle('is-active', isActive);
+        item.setAttribute('aria-pressed', String(isActive));
+      });
+
+      let visibleRows = 0;
+
+      rows.forEach((row) => {
+        const isVisible = showAll || row.dataset.category === selected;
+        row.classList.toggle('is-hidden', !isVisible);
+        if (isVisible) visibleRows += 1;
+      });
+
+      tableWrap.classList.toggle('is-hidden', visibleRows === 0);
+      annualSection.classList.toggle('is-hidden', !showAnnual);
+    });
+  });
+</script>
 
 </body>
 </html>

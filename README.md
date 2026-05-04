@@ -55,6 +55,7 @@ A pagina apresenta:
 - Tags coloridas por categoria tributaria.
 - Layout responsivo: tabela em desktop e cards empilhados em telas pequenas.
 - Tipografia com espacamento vertical ampliado para melhorar a leitura.
+- Filtros clicaveis por categoria na legenda.
 - Secao de obrigacoes anuais e especificas.
 - Observacoes sobre dias nao uteis, variacao por UF/municipio e fontes de referencia.
 
@@ -76,6 +77,7 @@ Como nao ha build ou testes automatizados configurados, valide manualmente:
 - Abertura do `index.html` no navegador.
 - Legibilidade dos numerais e faixas de datas.
 - Altura de linha dos textos em desktop e mobile.
+- Clique nos filtros da legenda: Todos, Federal, Trabalhista, Estadual, Municipal, Simples e Anual.
 - Conversao da tabela em cards empilhados em telas menores.
 - Ausencia de sobreposicao entre textos, marcadores e tags.
 - Coerencia dos vencimentos e observacoes com fontes oficiais atualizadas.
