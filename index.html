@@ -38,6 +38,8 @@
     padding: 24px 18px 40px;
     color: #111827;
     min-width: 320px;
+    line-height: 1.55;
+    text-rendering: optimizeLegibility;
   }
 
   body > * {
@@ -56,22 +58,23 @@
     font-size: 1.55rem;
     font-weight: 800;
     color: var(--dark);
-    line-height: 1.2;
-    letter-spacing: -0.3px;
+    line-height: 1.32;
+    letter-spacing: 0;
   }
   .hero h1 em { color: var(--federal); font-style: normal; }
-  .hero p { font-size: 0.76rem; color: #6B7280; margin-top: 5px; }
+  .hero p { font-size: 0.8rem; color: #6B7280; margin-top: 7px; line-height: 1.55; }
   .pill {
     display: inline-block;
     margin-top: 9px;
     background: var(--dark);
     color: #fff;
     font-family: 'Syne', sans-serif;
-    font-size: 0.7rem;
+    font-size: 0.72rem;
     font-weight: 700;
-    padding: 4px 14px;
+    padding: 6px 14px;
     border-radius: 20px;
-    letter-spacing: 0.4px;
+    letter-spacing: 0;
+    line-height: 1.35;
   }
 
   /* ── LEGENDA ── */
@@ -89,10 +92,11 @@
     background: #fff;
     border: 1.5px solid var(--border);
     border-radius: 20px;
-    padding: 5px 13px;
-    font-size: 0.71rem;
+    padding: 7px 13px;
+    font-size: 0.74rem;
     font-weight: 600;
     color: #374151;
+    line-height: 1.35;
   }
   .dot { width: 10px; height: 10px; border-radius: 50%; flex-shrink: 0; }
 
@@ -102,15 +106,15 @@
     color: #fff;
     border-radius: 11px;
     padding: 12px 16px;
-    font-size: 0.74rem;
-    line-height: 1.6;
+    font-size: 0.78rem;
+    line-height: 1.75;
     margin-bottom: 18px;
     display: flex;
     gap: 11px;
     align-items: flex-start;
   }
   .reforma .ico { font-size: 1.3rem; flex-shrink: 0; }
-  .reforma strong { font-family: 'Syne', sans-serif; font-size: 0.8rem; display: block; margin-bottom: 2px; }
+  .reforma strong { font-family: 'Syne', sans-serif; font-size: 0.84rem; display: block; margin-bottom: 4px; line-height: 1.35; }
 
   /* ── TABELA PRINCIPAL ── */
   .wrap {
@@ -134,12 +138,12 @@
     background: var(--dark);
     color: #fff;
     font-family: 'Syne', sans-serif;
-    font-size: 0.78rem;
+    font-size: 0.82rem;
     font-weight: 700;
-    padding: 13px 12px;
+    padding: 15px 12px;
     text-align: center;
     border: 1px solid #1e293b;
-    line-height: 1.2;
+    line-height: 1.35;
   }
   thead th:first-child {
     text-align: left;
@@ -149,15 +153,16 @@
   }
   thead th small {
     display: block;
-    font-size: 0.63rem;
+    font-size: 0.65rem;
     font-weight: 400;
     opacity: 0.7;
-    margin-top: 2px;
+    margin-top: 3px;
+    line-height: 1.35;
   }
 
   /* Células */
   tbody td {
-    padding: 13px 11px;
+    padding: 15px 12px;
     border: 1px solid var(--border);
     vertical-align: top;
     background: #fff;
@@ -166,13 +171,18 @@
 
   .row-head {
     font-family: 'Syne', sans-serif;
-    font-size: 0.72rem;
+    font-size: 0.76rem;
     font-weight: 700;
     color: #374151;
     background: #F8FAFC !important;
     border-right: 2px solid var(--border) !important;
     width: 155px;
-    line-height: 1.5;
+    line-height: 1.65;
+  }
+  .row-head span {
+    display: block;
+    margin-top: 2px;
+    line-height: 1.55;
   }
 
   /* ── DIA MARCADOR ── */
@@ -182,14 +192,15 @@
     justify-content: center;
     width: max-content;
     min-width: 38px;
-    height: 34px;
-    padding: 0 10px;
+    min-height: 34px;
+    height: auto;
+    padding: 7px 10px;
     border-radius: 999px;
     font-family: 'Syne', sans-serif;
     font-size: 0.78rem;
     font-weight: 800;
     color: #fff;
-    line-height: 1;
+    line-height: 1.15;
     white-space: nowrap;
     margin-bottom: 9px;
     flex-shrink: 0;
@@ -204,11 +215,11 @@
   .tag {
     display: block;
     border-radius: 7px;
-    padding: 7px 10px;
-    font-size: 0.7rem;
+    padding: 9px 11px;
+    font-size: 0.74rem;
     font-weight: 600;
-    line-height: 1.45;
-    margin-bottom: 6px;
+    line-height: 1.62;
+    margin-bottom: 8px;
     border-width: 1.5px;
     border-style: solid;
     position: relative;
@@ -224,11 +235,11 @@
 
   .tag .sub {
     display: block;
-    font-size: 0.62rem;
+    font-size: 0.66rem;
     font-weight: 400;
     opacity: 0.78;
-    margin-top: 2px;
-    line-height: 1.45;
+    margin-top: 4px;
+    line-height: 1.6;
   }
 
   /* ── ANUAIS ── */
@@ -243,12 +254,13 @@
     background: #7F1D1D;
     color: #fff;
     font-family: 'Syne', sans-serif;
-    font-size: 0.78rem;
+    font-size: 0.82rem;
     font-weight: 700;
-    padding: 10px 15px;
+    padding: 12px 15px;
+    line-height: 1.4;
   }
   .anuais-body {
-    padding: 14px 15px;
+    padding: 16px 15px;
     display: flex;
     flex-wrap: wrap;
     gap: 8px;
@@ -256,20 +268,21 @@
   .tag-inline {
     display: inline-block;
     border-radius: 7px;
-    padding: 5px 11px;
-    font-size: 0.68rem;
+    padding: 8px 12px;
+    font-size: 0.72rem;
     font-weight: 600;
     border: 1.5px solid var(--anual-bd);
     background: var(--anual-bg);
     color: var(--anual);
-    line-height: 1.35;
+    line-height: 1.55;
   }
   .tag-inline .sub {
     display: block;
-    font-size: 0.59rem;
+    font-size: 0.63rem;
     font-weight: 400;
     opacity: 0.78;
-    margin-top: 1px;
+    margin-top: 3px;
+    line-height: 1.5;
   }
 
   /* ── NOTAS ── */
@@ -277,16 +290,16 @@
     background: #fff;
     border-radius: 12px;
     border-left: 5px solid #F59E0B;
-    padding: 13px 17px;
-    font-size: 0.73rem;
+    padding: 15px 17px;
+    font-size: 0.76rem;
     color: #4B5563;
-    line-height: 1.75;
+    line-height: 1.85;
     box-shadow: 0 1px 8px rgba(0,0,0,0.05);
   }
   .notas .ntitle {
     font-family: 'Syne', sans-serif;
     font-weight: 800;
-    font-size: 0.8rem;
+    font-size: 0.84rem;
     color: var(--dark);
     display: block;
     margin-bottom: 8px;
@@ -309,25 +322,25 @@
     }
 
     .hero h1 {
-      font-size: 1.28rem;
-      line-height: 1.25;
+      font-size: 1.32rem;
+      line-height: 1.38;
     }
 
     .hero p {
-      font-size: 0.72rem;
-      line-height: 1.45;
+      font-size: 0.76rem;
+      line-height: 1.6;
     }
 
     .pill {
-      font-size: 0.66rem;
-      line-height: 1.25;
+      font-size: 0.68rem;
+      line-height: 1.4;
       max-width: 100%;
     }
 
     .reforma {
       padding: 12px;
       gap: 9px;
-      line-height: 1.5;
+      line-height: 1.7;
     }
 
     .legenda {
@@ -338,8 +351,8 @@
     .leg {
       flex: 1 1 145px;
       border-radius: 8px;
-      padding: 7px 9px;
-      line-height: 1.25;
+      padding: 8px 10px;
+      line-height: 1.45;
     }
 
     .wrap {
@@ -385,27 +398,29 @@
     tbody td {
       border: 0;
       border-top: 1px solid var(--border);
-      padding: 12px;
+      padding: 14px 12px;
     }
 
     tbody td.row-head {
       width: 100%;
       border-top: 0;
       border-right: 0 !important;
-      padding: 13px 14px;
-      font-size: 0.82rem;
+      padding: 15px 14px;
+      font-size: 0.86rem;
       background: var(--dark) !important;
       color: #fff;
+      line-height: 1.6;
     }
 
     tbody td:not(.row-head)::before {
       display: block;
       margin-bottom: 9px;
       font-family: 'Syne', sans-serif;
-      font-size: 0.68rem;
+      font-size: 0.7rem;
       font-weight: 800;
       color: #475569;
       text-transform: uppercase;
+      line-height: 1.4;
     }
 
     tbody td:nth-child(2)::before { content: "Semana 1 - Dias 1 a 7"; }
@@ -416,25 +431,28 @@
 
     .day {
       min-width: 42px;
-      height: 36px;
-      font-size: 0.82rem;
+      min-height: 36px;
+      height: auto;
+      font-size: 0.84rem;
     }
 
     .day.gray {
-      font-size: 0.68rem;
+      font-size: 0.7rem;
     }
 
     .tag {
-      padding: 8px 10px;
-      font-size: 0.72rem;
+      padding: 10px 11px;
+      font-size: 0.76rem;
+      line-height: 1.65;
     }
 
     .tag .sub {
-      font-size: 0.64rem;
+      font-size: 0.68rem;
+      line-height: 1.62;
     }
 
     .anuais-head {
-      line-height: 1.35;
+      line-height: 1.5;
     }
 
     .anuais-body {
@@ -445,14 +463,15 @@
 
     .tag-inline {
       width: 100%;
-      padding: 8px 10px;
-      font-size: 0.72rem;
+      padding: 10px 11px;
+      font-size: 0.76rem;
+      line-height: 1.6;
     }
 
     .notas {
-      padding: 12px 14px;
-      font-size: 0.72rem;
-      line-height: 1.65;
+      padding: 14px;
+      font-size: 0.76rem;
+      line-height: 1.8;
     }
   }
 </style>
