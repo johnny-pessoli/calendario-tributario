@@ -1,0 +1,607 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Calendário de Vencimentos Tributários — Brasil</title>
+<link href="https://fonts.googleapis.com/css2?family=Syne:wght@700;800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --federal:      #1A56DB;
+    --federal-bg:   #EBF2FF;
+    --federal-bd:   #BFDBFE;
+    --trab:         #057A55;
+    --trab-bg:      #DEF7EC;
+    --trab-bd:      #6EE7B7;
+    --estadual:     #B45309;
+    --estadual-bg:  #FEF3C7;
+    --estadual-bd:  #FDE68A;
+    --municipal:    #7E3AF2;
+    --municipal-bg: #EDEBFE;
+    --municipal-bd: #DDD6FE;
+    --simples:      #0694A2;
+    --simples-bg:   #D5F5F6;
+    --simples-bd:   #AFECEF;
+    --anual:        #C81E1E;
+    --anual-bg:     #FDE8E8;
+    --anual-bd:     #FCA5A5;
+    --dark:         #0F172A;
+    --border:       #E5E7EB;
+    --bg:           #F1F4F9;
+  }
+
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+
+  body {
+    font-family: 'Inter', sans-serif;
+    background: var(--bg);
+    padding: 24px 18px 40px;
+    color: #111827;
+    min-width: 320px;
+  }
+
+  body > * {
+    max-width: 1180px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  /* ── HERO ── */
+  .hero {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  .hero h1 {
+    font-family: 'Syne', sans-serif;
+    font-size: 1.55rem;
+    font-weight: 800;
+    color: var(--dark);
+    line-height: 1.2;
+    letter-spacing: -0.3px;
+  }
+  .hero h1 em { color: var(--federal); font-style: normal; }
+  .hero p { font-size: 0.76rem; color: #6B7280; margin-top: 5px; }
+  .pill {
+    display: inline-block;
+    margin-top: 9px;
+    background: var(--dark);
+    color: #fff;
+    font-family: 'Syne', sans-serif;
+    font-size: 0.7rem;
+    font-weight: 700;
+    padding: 4px 14px;
+    border-radius: 20px;
+    letter-spacing: 0.4px;
+  }
+
+  /* ── LEGENDA ── */
+  .legenda {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 7px;
+    justify-content: center;
+    margin-bottom: 18px;
+  }
+  .leg {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    background: #fff;
+    border: 1.5px solid var(--border);
+    border-radius: 20px;
+    padding: 5px 13px;
+    font-size: 0.71rem;
+    font-weight: 600;
+    color: #374151;
+  }
+  .dot { width: 10px; height: 10px; border-radius: 50%; flex-shrink: 0; }
+
+  /* ── REFORMA BANNER ── */
+  .reforma {
+    background: linear-gradient(135deg, #1e3a5f, #1A56DB);
+    color: #fff;
+    border-radius: 11px;
+    padding: 12px 16px;
+    font-size: 0.74rem;
+    line-height: 1.6;
+    margin-bottom: 18px;
+    display: flex;
+    gap: 11px;
+    align-items: flex-start;
+  }
+  .reforma .ico { font-size: 1.3rem; flex-shrink: 0; }
+  .reforma strong { font-family: 'Syne', sans-serif; font-size: 0.8rem; display: block; margin-bottom: 2px; }
+
+  /* ── TABELA PRINCIPAL ── */
+  .wrap {
+    background: #fff;
+    border-radius: 13px;
+    overflow: hidden;
+    box-shadow: 0 2px 18px rgba(0,0,0,0.08);
+    margin-bottom: 18px;
+    overflow-x: auto;
+    border: 1px solid rgba(15, 23, 42, 0.06);
+  }
+  table {
+    width: 100%;
+    min-width: 920px;
+    border-collapse: collapse;
+    table-layout: fixed;
+  }
+
+  /* Cabeçalho */
+  thead th {
+    background: var(--dark);
+    color: #fff;
+    font-family: 'Syne', sans-serif;
+    font-size: 0.78rem;
+    font-weight: 700;
+    padding: 13px 12px;
+    text-align: center;
+    border: 1px solid #1e293b;
+    line-height: 1.2;
+  }
+  thead th:first-child {
+    text-align: left;
+    padding-left: 14px;
+    width: 155px;
+    border-right: 2px solid #334155;
+  }
+  thead th small {
+    display: block;
+    font-size: 0.63rem;
+    font-weight: 400;
+    opacity: 0.7;
+    margin-top: 2px;
+  }
+
+  /* Células */
+  tbody td {
+    padding: 13px 11px;
+    border: 1px solid var(--border);
+    vertical-align: top;
+    background: #fff;
+  }
+  tbody tr:hover { background: #F9FAFB; }
+
+  .row-head {
+    font-family: 'Syne', sans-serif;
+    font-size: 0.72rem;
+    font-weight: 700;
+    color: #374151;
+    background: #F8FAFC !important;
+    border-right: 2px solid var(--border) !important;
+    width: 155px;
+    line-height: 1.5;
+  }
+
+  /* ── DIA MARCADOR ── */
+  .day {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: max-content;
+    min-width: 38px;
+    height: 34px;
+    padding: 0 10px;
+    border-radius: 999px;
+    font-family: 'Syne', sans-serif;
+    font-size: 0.78rem;
+    font-weight: 800;
+    color: #fff;
+    line-height: 1;
+    white-space: nowrap;
+    margin-bottom: 9px;
+    flex-shrink: 0;
+    box-shadow: 0 6px 14px rgba(15, 23, 42, 0.16);
+  }
+  .day.dark   { background: var(--dark); }
+  .day.amber  { background: #D97706; }
+  .day.blue   { background: #1A56DB; }
+  .day.gray   { background: #6B7280; font-size: 0.66rem; }
+
+  /* ── TAG / BADGE ── */
+  .tag {
+    display: block;
+    border-radius: 7px;
+    padding: 7px 10px;
+    font-size: 0.7rem;
+    font-weight: 600;
+    line-height: 1.45;
+    margin-bottom: 6px;
+    border-width: 1.5px;
+    border-style: solid;
+    position: relative;
+  }
+  .tag:last-child { margin-bottom: 0; }
+
+  .tag.federal   { background: var(--federal-bg);   color: var(--federal);   border-color: var(--federal-bd); }
+  .tag.trab      { background: var(--trab-bg);      color: var(--trab);      border-color: var(--trab-bd); }
+  .tag.estadual  { background: var(--estadual-bg);  color: var(--estadual);  border-color: var(--estadual-bd); }
+  .tag.municipal { background: var(--municipal-bg); color: var(--municipal); border-color: var(--municipal-bd); }
+  .tag.simples   { background: var(--simples-bg);   color: var(--simples);   border-color: var(--simples-bd); }
+  .tag.anual     { background: var(--anual-bg);     color: var(--anual);     border-color: var(--anual-bd); }
+
+  .tag .sub {
+    display: block;
+    font-size: 0.62rem;
+    font-weight: 400;
+    opacity: 0.78;
+    margin-top: 2px;
+    line-height: 1.45;
+  }
+
+  @media (max-width: 760px) {
+    body {
+      padding: 18px 12px 32px;
+    }
+
+    table {
+      min-width: 860px;
+    }
+
+    thead th:first-child,
+    .row-head {
+      width: 140px;
+    }
+  }
+
+  /* ── ANUAIS ── */
+  .anuais-wrap {
+    background: #fff;
+    border-radius: 13px;
+    overflow: hidden;
+    box-shadow: 0 2px 14px rgba(0,0,0,0.07);
+    margin-bottom: 18px;
+  }
+  .anuais-head {
+    background: #7F1D1D;
+    color: #fff;
+    font-family: 'Syne', sans-serif;
+    font-size: 0.78rem;
+    font-weight: 700;
+    padding: 10px 15px;
+  }
+  .anuais-body {
+    padding: 14px 15px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+  }
+  .tag-inline {
+    display: inline-block;
+    border-radius: 7px;
+    padding: 5px 11px;
+    font-size: 0.68rem;
+    font-weight: 600;
+    border: 1.5px solid var(--anual-bd);
+    background: var(--anual-bg);
+    color: var(--anual);
+    line-height: 1.35;
+  }
+  .tag-inline .sub {
+    display: block;
+    font-size: 0.59rem;
+    font-weight: 400;
+    opacity: 0.78;
+    margin-top: 1px;
+  }
+
+  /* ── NOTAS ── */
+  .notas {
+    background: #fff;
+    border-radius: 12px;
+    border-left: 5px solid #F59E0B;
+    padding: 13px 17px;
+    font-size: 0.73rem;
+    color: #4B5563;
+    line-height: 1.75;
+    box-shadow: 0 1px 8px rgba(0,0,0,0.05);
+  }
+  .notas .ntitle {
+    font-family: 'Syne', sans-serif;
+    font-weight: 800;
+    font-size: 0.8rem;
+    color: var(--dark);
+    display: block;
+    margin-bottom: 8px;
+  }
+  .notas ul { padding-left: 18px; }
+  .notas ul li { margin-bottom: 4px; }
+</style>
+</head>
+<body>
+
+<!-- HERO -->
+<div class="hero">
+  <h1>📅 Calendário de <em>Vencimentos Tributários</em> Mensais — Brasil</h1>
+  <p>Federal · Estadual · Municipal · Trabalhista / Previdenciário · Simples Nacional / MEI</p>
+  <span class="pill">✅ Válido para qualquer mês do ano</span>
+</div>
+
+<!-- REFORMA -->
+<div class="reforma">
+  <div class="ico">⚖️</div>
+  <div>
+    <strong>Reforma Tributária — Fase de Transição (2026)</strong>
+    CBS e IBS entram em vigor de forma informativa/paralela em 2026. Os tributos e prazos atuais permanecem inalterados.
+  </div>
+</div>
+
+<!-- LEGENDA -->
+<div class="legenda">
+  <div class="leg"><div class="dot" style="background:var(--federal)"></div>🏛 Federal</div>
+  <div class="leg"><div class="dot" style="background:var(--trab)"></div>💼 Trabalhista / Prev.</div>
+  <div class="leg"><div class="dot" style="background:var(--estadual)"></div>🏢 Estadual</div>
+  <div class="leg"><div class="dot" style="background:var(--municipal)"></div>🏙️ Municipal</div>
+  <div class="leg"><div class="dot" style="background:var(--simples)"></div>🟦 Simples / MEI</div>
+  <div class="leg"><div class="dot" style="background:var(--anual)"></div>📌 Anual / Específico</div>
+</div>
+
+<!-- TABELA -->
+<div class="wrap">
+<table>
+<thead>
+  <tr>
+    <th>Grupo</th>
+    <th>Semana 1<small>Dias 1 – 7</small></th>
+    <th>Semana 2<small>Dias 7 – 10</small></th>
+    <th>Semana 3<small>Dias 10 – 15</small></th>
+    <th>Semana 4<small>Dias 15 – 20</small></th>
+    <th>Semana 5<small>Dias 20 – último</small></th>
+  </tr>
+</thead>
+<tbody>
+
+<!-- ══ TRABALHISTA ══ -->
+<tr>
+  <td class="row-head">💼 Trabalhista &amp;<br>Previdenciário</td>
+  <td>—</td>
+
+  <!-- Dia 7 -->
+  <td>
+    <div class="day amber">7</div>
+    <div class="tag trab">
+      FGTS Digital (GFD)
+      <span class="sub">Depósito competência mês anterior. PIX até 21h59 (Brasília). Antecipe se dia 7 cair em feriado/fim de semana.</span>
+    </div>
+  </td>
+
+  <!-- Dia 15 -->
+  <td>
+    <div class="day blue">15</div>
+    <div class="tag trab">
+      eSocial
+      <span class="sub">Transmissão de eventos de folha: admissões, demissões, afastamentos, rubricas do mês anterior.</span>
+    </div>
+    <div class="tag trab">
+      EFD-Reinf
+      <span class="sub">Retenções de IRRF, PIS, COFINS e CSLL sobre serviços. Alimenta a DCTFWeb automaticamente.</span>
+    </div>
+  </td>
+
+  <!-- Dia 20 -->
+  <td>
+    <div class="day dark">20</div>
+    <div class="tag trab">
+      INSS — GPS / DCTFWeb
+      <span class="sub">Contribuição patronal + empregados. Competência do mês anterior. Base: Lei 8.212/91.</span>
+    </div>
+    <div class="tag trab">
+      IRRF s/ Folha
+      <span class="sub">IR Retido na Fonte sobre salários, pró-labore e autônomos. Gerado via DCTFWeb/eSocial.</span>
+    </div>
+    <div class="tag trab">
+      DCTFWeb
+      <span class="sub">Declaração consolidada de INSS + IRRF. Transmissão e pagamento até dia 20.</span>
+    </div>
+    <div class="tag trab">
+      Simples Doméstico (DAE)
+      <span class="sub">INSS patronal + FGTS + seguro acidente + IRRF do empregado doméstico.</span>
+    </div>
+  </td>
+
+  <td>—</td>
+</tr>
+
+<!-- ══ FEDERAL ══ -->
+<tr>
+  <td class="row-head">🏛 Federal<br><span style="font-size:0.63rem;font-weight:400">Lucro Presumido / Real</span></td>
+  <td>—</td>
+  <td>—</td>
+
+  <!-- Dia 15 -->
+  <td>
+    <div class="day blue">15</div>
+    <div class="tag federal">
+      PIS / COFINS RF — Autopeças
+      <span class="sub">Retidos na fonte — 1ª quinzena mês anterior. DARF cód. 4574 (PIS) e 7987 (COFINS).</span>
+    </div>
+  </td>
+
+  <!-- Dia 20 -->
+  <td>
+    <div class="day dark">20</div>
+    <div class="tag federal">
+      IRPJ
+      <span class="sub">Estimativa mensal (Lucro Real) ou trimestral (Lucro Presumido). DARF cód. 2362 / 5993.</span>
+    </div>
+    <div class="tag federal">
+      CSLL
+      <span class="sub">Contribuição Social sobre o Lucro Líquido. Estimativa mensal ou trimestral. DARF cód. 2372 / 6012.</span>
+    </div>
+    <div class="tag federal">
+      IRRF s/ Serviços
+      <span class="sub">Retido na fonte sobre pagamentos a PF e PJ (serviços, aluguéis, royalties). DARF cód. 1708 / 4600.</span>
+    </div>
+    <div class="tag federal">
+      COFINS / CSLL / PIS RF
+      <span class="sub">Retidos sobre pagamentos PJ→PJ (serviços em geral). Base: Art. 35, Lei 10.833/2003.</span>
+    </div>
+  </td>
+
+  <!-- Dia 25 / ÚDU -->
+  <td>
+    <div class="day blue">25</div>
+    <div class="tag federal">
+      PIS / PASEP
+      <span class="sub">Cumulativo cód. 8109 · Não-cumulativo cód. 6912. Vence dia 25.</span>
+    </div>
+    <div class="tag federal">
+      COFINS
+      <span class="sub">Cumulativa cód. 2172 · Não-cumulativa cód. 5856. Vence dia 25.</span>
+    </div>
+    <div class="tag federal">
+      IPI
+      <span class="sub">Indústrias e equiparadas fora do Simples. Vence dia 25.</span>
+    </div>
+    <div class="day gray" style="margin-top:8px">ÚDU</div>
+    <div class="tag federal">
+      DCTF Mensal
+      <span class="sub">Declaração de Débitos e Créditos Tributários. Até o 15º dia útil do 2º mês subsequente.</span>
+    </div>
+    <div class="tag federal">
+      EFD-Contribuições
+      <span class="sub">Escrituração digital de PIS, COFINS e CPRB. Até o 10º dia útil do 2º mês subsequente.</span>
+    </div>
+  </td>
+</tr>
+
+<!-- ══ SIMPLES NACIONAL / MEI ══ -->
+<tr>
+  <td class="row-head">🟦 Simples Nacional<br>&amp; MEI</td>
+  <td>—</td>
+  <td>—</td>
+  <td>—</td>
+
+  <!-- Dia 20 -->
+  <td>
+    <div class="day dark">20</div>
+    <div class="tag simples">
+      DAS — Simples Nacional
+      <span class="sub">Unifica IRPJ, CSLL, PIS, COFINS, CPP (INSS patronal), ISS e ICMS em uma guia. Competência do mês anterior.</span>
+    </div>
+    <div class="tag simples">
+      DAS-MEI
+      <span class="sub">Valor fixo mensal: INSS (5% salário mínimo) + ISS e/ou ICMS fixo conforme atividade.</span>
+    </div>
+  </td>
+  <td>—</td>
+</tr>
+
+<!-- ══ ESTADUAL ══ -->
+<tr>
+  <td class="row-head">🏢 Estadual<br><span style="font-size:0.63rem;font-weight:400">Varia por UF</span></td>
+  <td>—</td>
+  <td>—</td>
+
+  <!-- 9–15 -->
+  <td>
+    <div class="day amber">9–15</div>
+    <div class="tag estadual">
+      ICMS (saídas)
+      <span class="sub">Prazo entre dias 9 e 20 conforme cada UF. SP→20 · MG→12 · RJ→10 · RS→12. Consulte a SEFAZ do seu estado.</span>
+    </div>
+    <div class="tag estadual">
+      ICMS-ST (Substituição Tributária)
+      <span class="sub">Geralmente dias 9 ou 10 do mês seguinte, variando por estado e segmento. Verifique o protocolo ICMS aplicável.</span>
+    </div>
+  </td>
+
+  <!-- 15–20 -->
+  <td>
+    <div class="day amber">15–20</div>
+    <div class="tag estadual">
+      ICMS Difal
+      <span class="sub">Diferencial de Alíquota em operações interestaduais com consumidor final não contribuinte. Prazo varia por UF.</span>
+    </div>
+    <div class="tag estadual">
+      EFD ICMS / IPI
+      <span class="sub">Escrituração Fiscal Digital. Entrega até o último dia útil do mês seguinte ao período de apuração.</span>
+    </div>
+  </td>
+
+  <!-- Anual -->
+  <td>
+    <div class="day gray">Jan–Abr</div>
+    <div class="tag estadual">
+      IPVA (parcelas anuais)
+      <span class="sub">Vencimento anual parcelado conforme final de placa. Calendário definido por cada estado.</span>
+    </div>
+  </td>
+</tr>
+
+<!-- ══ MUNICIPAL ══ -->
+<tr>
+  <td class="row-head">🏙️ Municipal<br><span style="font-size:0.63rem;font-weight:400">Varia por município</span></td>
+  <td>—</td>
+  <td>—</td>
+
+  <!-- 5–15 -->
+  <td>
+    <div class="day amber">5–15</div>
+    <div class="tag municipal">
+      ISS (prestador de serviços)
+      <span class="sub">Prazo geralmente entre dias 5 e 15 do mês seguinte. Consulte a legislação do seu município.</span>
+    </div>
+    <div class="tag municipal">
+      DMS / NFS-e
+      <span class="sub">Declaração Mensal de Serviços ou escrituração de notas fiscais eletrônicas. Prazo e formato variam por prefeitura.</span>
+    </div>
+  </td>
+
+  <!-- 10–20 -->
+  <td>
+    <div class="day amber">10–20</div>
+    <div class="tag municipal">
+      ISS Retido na Fonte
+      <span class="sub">Tomador de serviço retém o ISS e recolhe à prefeitura. Prazo e código variam por município.</span>
+    </div>
+  </td>
+
+  <!-- Anual -->
+  <td>
+    <div class="day gray">Jan–Mar</div>
+    <div class="tag municipal">
+      IPTU (parcelas anuais)
+      <span class="sub">1ª parcela ou cota única em jan/fev com desconto. Parcelamento até out/nov. Prazo varia por prefeitura.</span>
+    </div>
+  </td>
+</tr>
+
+</tbody>
+</table>
+</div>
+
+<!-- ANUAIS -->
+<div class="anuais-wrap">
+  <div class="anuais-head">📌 Obrigações Anuais &amp; Específicas — Datas Fixas no Ano</div>
+  <div class="anuais-body">
+    <div class="tag-inline">31/jan<span class="sub">Opção Simples Nacional</span></div>
+    <div class="tag-inline">31/mar<span class="sub">DEFIS (Simples Nacional)</span></div>
+    <div class="tag-inline">Até 31/mai<span class="sub">DIRPF — Imposto de Renda PF</span></div>
+    <div class="tag-inline">31/mai<span class="sub">DASN-SIMEI (MEI)</span></div>
+    <div class="tag-inline">Últ. dia útil/mai<span class="sub">ECD — Escrituração Contábil Digital</span></div>
+    <div class="tag-inline">Últ. dia útil/jul<span class="sub">ECF — Escrituração Contábil Fiscal</span></div>
+    <div class="tag-inline">Trimestral<span class="sub">IRPJ / CSLL — Lucro Presumido</span></div>
+    <div class="tag-inline">30/nov e 20/dez<span class="sub">13º Salário (1ª e 2ª parcelas)</span></div>
+    <div class="tag-inline">Mensal<span class="sub">Férias CLT — aviso 30 dias antes</span></div>
+  </div>
+</div>
+
+<!-- NOTAS -->
+<div class="notas">
+  <span class="ntitle">⚠️ Observações Importantes</span>
+  <ul>
+    <li><strong>Dias não úteis (feriados / fins de semana):</strong> tributos federais antecipam para o último dia útil anterior. IPVA e IPTU podem postergar — verifique o regulamento de cada tributo.</li>
+    <li><strong>ICMS e ISS:</strong> prazos variam por estado e município. Consulte sempre a SEFAZ da sua UF e a Secretaria de Finanças do município.</li>
+    <li><strong>Simples Nacional:</strong> PIS, COFINS, IRPJ, CSLL, INSS patronal, ISS e ICMS já estão unificados no DAS — não há pagamento separado desses tributos.</li>
+    <li><strong>FGTS Digital:</strong> pagamento exclusivo via PIX, até 21h59m59s (horário de Brasília). Antecipe se o dia 7 cair em feriado ou fim de semana.</li>
+    <li><strong>DCTFWeb:</strong> gerada automaticamente pelo cruzamento de eSocial + EFD-Reinf. Transmissão e pagamento até o dia 20.</li>
+    <li><strong>ÚDU</strong> = Último Dia Útil do mês.</li>
+    <li>Fontes: <em>Receita Federal do Brasil · Caixa Econômica Federal · SEFAZ/SP · Escola Superior ESN · Davanzo Contabilidade · Stone Contabilidade · 2026.</em></li>
+  </ul>
+</div>
+
+</body>
+</html>
