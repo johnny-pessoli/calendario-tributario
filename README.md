@@ -27,7 +27,7 @@ A aplicacao atual e composta por:
 - Frontend: arquivo unico `index.html`, contendo marcacao HTML e estilos CSS internos.
 - Backend: inexistente.
 - Banco de Dados: inexistente.
-- Dependencias externas: fontes carregadas via Google Fonts.
+- Dependencias externas: nenhuma fonte ou biblioteca externa obrigatoria.
 
 ## Como executar
 
@@ -56,6 +56,8 @@ A pagina apresenta:
 - Layout responsivo: tabela em desktop e cards empilhados em telas pequenas.
 - Tipografia com espacamento vertical ampliado para melhorar a leitura.
 - Filtros clicaveis por categoria na legenda.
+- Filtro combinado por regime tributario: Simples Nacional, MEI/SIMEI, Lucro Presumido e Lucro Real.
+- Pesquisa por nome de imposto ou obrigacao, combinada com os filtros existentes.
 - Secao de obrigacoes anuais e especificas.
 - Observacoes sobre dias nao uteis, variacao por UF/municipio e fontes de referencia.
 
@@ -78,6 +80,8 @@ Como nao ha build ou testes automatizados configurados, valide manualmente:
 - Legibilidade dos numerais e faixas de datas.
 - Altura de linha dos textos em desktop e mobile.
 - Clique nos filtros da legenda: Todos, Federal, Trabalhista, Estadual, Municipal, Simples e Anual.
+- Clique nos filtros de regime tributario e confira se os prazos exibidos correspondem ao regime selecionado.
+- Pesquise por nomes como IRPJ, DAS, FGTS, COFINS ou EFD-Reinf e confira os resultados.
 - Conversao da tabela em cards empilhados em telas menores.
 - Ausencia de sobreposicao entre textos, marcadores e tags.
 - Coerencia dos vencimentos e observacoes com fontes oficiais atualizadas.
@@ -88,11 +92,11 @@ Nao existe `package.json` neste projeto.
 
 Dependencias atuais:
 
-- Navegador moderno com suporte a HTML5 e CSS3.
-- Conexao com a internet para carregar as fontes `Syne` e `Inter` do Google Fonts.
+- Navegador moderno com suporte a HTML5, CSS3 e JavaScript.
+- Fonte Arial/Helvetica disponivel no sistema operacional.
 
 ## Fontes e responsabilidade
 
 As informacoes do calendario devem ser revisadas periodicamente, pois prazos tributarios podem mudar por norma legal, calendario oficial, feriados, municipio, UF ou regime tributario.
 
-Use sempre fontes oficiais como Receita Federal, Caixa Economica Federal, SEFAZ estadual, prefeitura municipal e legislacao aplicavel antes de tomar decisoes fiscais ou operacionais.
+Use sempre fontes oficiais como Receita Federal, Ministerio do Trabalho e Emprego, Portal do Simples Nacional, Caixa Economica Federal, SEFAZ estadual, prefeitura municipal e legislacao aplicavel antes de tomar decisoes fiscais ou operacionais.

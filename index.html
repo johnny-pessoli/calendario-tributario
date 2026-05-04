@@ -4,7 +4,6 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Calendário de Vencimentos Tributários — Brasil</title>
-<link href="https://fonts.googleapis.com/css2?family=Syne:wght@700;800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
 <style>
   :root {
     --federal:      #1A56DB;
@@ -33,7 +32,7 @@
   * { box-sizing: border-box; margin: 0; padding: 0; }
 
   body {
-    font-family: 'Inter', sans-serif;
+    font-family: Arial, Helvetica, sans-serif;
     background: var(--bg);
     padding: 24px 18px 40px;
     color: #111827;
@@ -54,7 +53,7 @@
     margin-bottom: 20px;
   }
   .hero h1 {
-    font-family: 'Syne', sans-serif;
+    font-family: Arial, Helvetica, sans-serif;
     font-size: 1.55rem;
     font-weight: 800;
     color: var(--dark);
@@ -68,7 +67,7 @@
     margin-top: 9px;
     background: var(--dark);
     color: #fff;
-    font-family: 'Syne', sans-serif;
+    font-family: Arial, Helvetica, sans-serif;
     font-size: 0.72rem;
     font-weight: 700;
     padding: 6px 14px;
@@ -77,13 +76,33 @@
     line-height: 1.35;
   }
 
-  /* ── LEGENDA ── */
+  /* ── FILTROS ── */
+  .filters {
+    display: grid;
+    gap: 10px;
+    margin-bottom: 18px;
+  }
+  .filter-group {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 7px;
+    justify-content: center;
+  }
+  .filter-label {
+    width: 100%;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 0.68rem;
+    font-weight: 800;
+    color: #475569;
+    text-align: center;
+    text-transform: uppercase;
+    line-height: 1.4;
+  }
   .legenda {
     display: flex;
     flex-wrap: wrap;
     gap: 7px;
     justify-content: center;
-    margin-bottom: 18px;
   }
   .leg {
     display: flex;
@@ -116,6 +135,83 @@
   }
   .dot { width: 10px; height: 10px; border-radius: 50%; flex-shrink: 0; }
   .is-hidden { display: none !important; }
+  .filter-empty {
+    background: #fff;
+    border: 1px solid var(--border);
+    border-radius: 10px;
+    color: #64748B;
+    display: none;
+    font-size: 0.78rem;
+    line-height: 1.55;
+    margin-bottom: 18px;
+    padding: 12px 14px;
+    text-align: center;
+  }
+  .filter-empty.is-visible { display: block; }
+  .search-panel {
+    background: #fff;
+    border: 1px solid rgba(15, 23, 42, 0.08);
+    border-radius: 10px;
+    box-shadow: 0 1px 8px rgba(15, 23, 42, 0.05);
+    display: grid;
+    gap: 7px;
+    margin-bottom: 18px;
+    padding: 12px 14px;
+  }
+  .search-panel label {
+    color: #334155;
+    font-size: 0.76rem;
+    font-weight: 700;
+    line-height: 1.35;
+  }
+  .search-row {
+    display: flex;
+    gap: 8px;
+  }
+  .tax-search {
+    appearance: none;
+    border: 1.5px solid var(--border);
+    border-radius: 8px;
+    color: #0F172A;
+    flex: 1;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 0.86rem;
+    font-weight: 700;
+    line-height: 1.45;
+    min-width: 0;
+    padding: 10px 12px;
+  }
+  .tax-search:focus {
+    border-color: var(--federal);
+    box-shadow: 0 0 0 3px rgba(26, 86, 219, 0.12);
+    outline: none;
+  }
+  .clear-search {
+    align-items: center;
+    appearance: none;
+    background: var(--dark);
+    border: 1.5px solid var(--dark);
+    border-radius: 8px;
+    color: #fff;
+    cursor: pointer;
+    display: inline-flex;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 0.76rem;
+    font-weight: 700;
+    justify-content: center;
+    line-height: 1.35;
+    padding: 0 13px;
+  }
+  .clear-search:focus-visible {
+    box-shadow: 0 0 0 3px rgba(15, 23, 42, 0.18);
+    outline: none;
+  }
+  .search-count {
+    color: #64748B;
+    font-size: 0.7rem;
+    font-weight: 700;
+    line-height: 1.45;
+  }
 
   /* ── REFORMA BANNER ── */
   .reforma {
@@ -131,7 +227,7 @@
     align-items: flex-start;
   }
   .reforma .ico { font-size: 1.3rem; flex-shrink: 0; }
-  .reforma strong { font-family: 'Syne', sans-serif; font-size: 0.84rem; display: block; margin-bottom: 4px; line-height: 1.35; }
+  .reforma strong { font-family: Arial, Helvetica, sans-serif; font-size: 0.84rem; display: block; margin-bottom: 4px; line-height: 1.35; }
 
   /* ── TABELA PRINCIPAL ── */
   .wrap {
@@ -154,7 +250,7 @@
   thead th {
     background: var(--dark);
     color: #fff;
-    font-family: 'Syne', sans-serif;
+    font-family: Arial, Helvetica, sans-serif;
     font-size: 0.82rem;
     font-weight: 700;
     padding: 15px 12px;
@@ -171,7 +267,7 @@
   thead th small {
     display: block;
     font-size: 0.65rem;
-    font-weight: 400;
+    font-weight: 700;
     opacity: 0.7;
     margin-top: 3px;
     line-height: 1.35;
@@ -187,7 +283,7 @@
   tbody tr:hover { background: #F9FAFB; }
 
   .row-head {
-    font-family: 'Syne', sans-serif;
+    font-family: Arial, Helvetica, sans-serif;
     font-size: 0.76rem;
     font-weight: 700;
     color: #374151;
@@ -213,7 +309,7 @@
     height: auto;
     padding: 7px 10px;
     border-radius: 999px;
-    font-family: 'Syne', sans-serif;
+    font-family: Arial, Helvetica, sans-serif;
     font-size: 0.78rem;
     font-weight: 800;
     color: #fff;
@@ -253,7 +349,7 @@
   .tag .sub {
     display: block;
     font-size: 0.66rem;
-    font-weight: 400;
+    font-weight: 700;
     opacity: 0.78;
     margin-top: 4px;
     line-height: 1.6;
@@ -270,7 +366,7 @@
   .anuais-head {
     background: #7F1D1D;
     color: #fff;
-    font-family: 'Syne', sans-serif;
+    font-family: Arial, Helvetica, sans-serif;
     font-size: 0.82rem;
     font-weight: 700;
     padding: 12px 15px;
@@ -296,7 +392,7 @@
   .tag-inline .sub {
     display: block;
     font-size: 0.63rem;
-    font-weight: 400;
+    font-weight: 700;
     opacity: 0.78;
     margin-top: 3px;
     line-height: 1.5;
@@ -314,7 +410,7 @@
     box-shadow: 0 1px 8px rgba(0,0,0,0.05);
   }
   .notas .ntitle {
-    font-family: 'Syne', sans-serif;
+    font-family: Arial, Helvetica, sans-serif;
     font-weight: 800;
     font-size: 0.84rem;
     color: var(--dark);
@@ -363,6 +459,26 @@
     .legenda {
       justify-content: flex-start;
       gap: 6px;
+    }
+
+    .filter-group {
+      justify-content: flex-start;
+    }
+
+    .filter-label {
+      text-align: left;
+    }
+
+    .search-panel {
+      padding: 12px;
+    }
+
+    .search-row {
+      display: grid;
+    }
+
+    .clear-search {
+      min-height: 40px;
     }
 
     .leg {
@@ -432,7 +548,7 @@
     tbody td:not(.row-head)::before {
       display: block;
       margin-bottom: 9px;
-      font-family: 'Syne', sans-serif;
+      font-family: Arial, Helvetica, sans-serif;
       font-size: 0.7rem;
       font-weight: 800;
       color: #475569;
@@ -511,16 +627,39 @@
   </div>
 </div>
 
-<!-- LEGENDA -->
-<div class="legenda">
-  <button class="leg is-active" type="button" data-filter="todos" aria-pressed="true"><span class="dot" style="background:var(--dark)"></span>Todos</button>
-  <button class="leg" type="button" data-filter="federal" aria-pressed="false"><span class="dot" style="background:var(--federal)"></span>🏛 Federal</button>
-  <button class="leg" type="button" data-filter="trab" aria-pressed="false"><span class="dot" style="background:var(--trab)"></span>💼 Trabalhista / Prev.</button>
-  <button class="leg" type="button" data-filter="estadual" aria-pressed="false"><span class="dot" style="background:var(--estadual)"></span>🏢 Estadual</button>
-  <button class="leg" type="button" data-filter="municipal" aria-pressed="false"><span class="dot" style="background:var(--municipal)"></span>🏙️ Municipal</button>
-  <button class="leg" type="button" data-filter="simples" aria-pressed="false"><span class="dot" style="background:var(--simples)"></span>🟦 Simples / MEI</button>
-  <button class="leg" type="button" data-filter="anual" aria-pressed="false"><span class="dot" style="background:var(--anual)"></span>📌 Anual / Específico</button>
+<!-- FILTROS -->
+<div class="filters">
+  <div class="filter-group legenda" aria-label="Filtro por categoria">
+    <span class="filter-label">Categoria</span>
+    <button class="leg is-active" type="button" data-filter-category="todos" aria-pressed="true"><span class="dot" style="background:var(--dark)"></span>Todos</button>
+    <button class="leg" type="button" data-filter-category="federal" aria-pressed="false"><span class="dot" style="background:var(--federal)"></span>🏛 Federal</button>
+    <button class="leg" type="button" data-filter-category="trab" aria-pressed="false"><span class="dot" style="background:var(--trab)"></span>💼 Trabalhista / Prev.</button>
+    <button class="leg" type="button" data-filter-category="estadual" aria-pressed="false"><span class="dot" style="background:var(--estadual)"></span>🏢 Estadual</button>
+    <button class="leg" type="button" data-filter-category="municipal" aria-pressed="false"><span class="dot" style="background:var(--municipal)"></span>🏙️ Municipal</button>
+    <button class="leg" type="button" data-filter-category="simples" aria-pressed="false"><span class="dot" style="background:var(--simples)"></span>🟦 Simples / MEI</button>
+    <button class="leg" type="button" data-filter-category="anual" aria-pressed="false"><span class="dot" style="background:var(--anual)"></span>📌 Anual / Específico</button>
+  </div>
+
+  <div class="filter-group" aria-label="Filtro por regime tributário">
+    <span class="filter-label">Regime tributário</span>
+    <button class="leg is-active" type="button" data-filter-regime="todos" aria-pressed="true"><span class="dot" style="background:var(--dark)"></span>Todos</button>
+    <button class="leg" type="button" data-filter-regime="simples" aria-pressed="false"><span class="dot" style="background:var(--simples)"></span>Simples Nacional</button>
+    <button class="leg" type="button" data-filter-regime="mei" aria-pressed="false"><span class="dot" style="background:var(--simples)"></span>MEI / SIMEI</button>
+    <button class="leg" type="button" data-filter-regime="presumido" aria-pressed="false"><span class="dot" style="background:var(--federal)"></span>Lucro Presumido</button>
+    <button class="leg" type="button" data-filter-regime="real" aria-pressed="false"><span class="dot" style="background:var(--federal)"></span>Lucro Real</button>
+  </div>
 </div>
+
+<div class="search-panel">
+  <label for="tax-search">Pesquisar imposto ou obrigação</label>
+  <div class="search-row">
+    <input class="tax-search" id="tax-search" type="search" placeholder="Ex.: IRPJ, DAS, FGTS, COFINS, EFD-Reinf" autocomplete="off">
+    <button class="clear-search" type="button">Limpar</button>
+  </div>
+  <div class="search-count" aria-live="polite">Mostrando todos os prazos.</div>
+</div>
+
+<div class="filter-empty" aria-live="polite">Nenhum prazo encontrado para a combinação de filtros selecionada.</div>
 
 <!-- TABELA -->
 <div class="wrap">
@@ -542,23 +681,16 @@
   <td class="row-head">💼 Trabalhista &amp;<br>Previdenciário</td>
   <td>—</td>
 
-  <!-- Dia 7 -->
-  <td>
-    <div class="day amber">7</div>
-    <div class="tag trab">
-      FGTS Digital (GFD)
-      <span class="sub">Depósito competência mês anterior. PIX até 21h59 (Brasília). Antecipe se dia 7 cair em feriado/fim de semana.</span>
-    </div>
-  </td>
+  <td>—</td>
 
   <!-- Dia 15 -->
   <td>
     <div class="day blue">15</div>
-    <div class="tag trab">
+    <div class="tag trab" data-regimes="simples mei presumido real">
       eSocial
       <span class="sub">Transmissão de eventos de folha: admissões, demissões, afastamentos, rubricas do mês anterior.</span>
     </div>
-    <div class="tag trab">
+    <div class="tag trab" data-regimes="simples presumido real">
       EFD-Reinf
       <span class="sub">Retenções de IRRF, PIS, COFINS e CSLL sobre serviços. Alimenta a DCTFWeb automaticamente.</span>
     </div>
@@ -567,19 +699,23 @@
   <!-- Dia 20 -->
   <td>
     <div class="day dark">20</div>
-    <div class="tag trab">
+    <div class="tag trab" data-regimes="simples mei presumido real">
+      FGTS Digital (GFD)
+      <span class="sub">Guia mensal via FGTS Digital. Desde a competência março/2024, o vencimento mensal é até o dia 20 do mês seguinte.</span>
+    </div>
+    <div class="tag trab" data-regimes="simples mei presumido real">
       INSS — GPS / DCTFWeb
       <span class="sub">Contribuição patronal + empregados. Competência do mês anterior. Base: Lei 8.212/91.</span>
     </div>
-    <div class="tag trab">
+    <div class="tag trab" data-regimes="simples presumido real">
       IRRF s/ Folha
       <span class="sub">IR Retido na Fonte sobre salários, pró-labore e autônomos. Gerado via DCTFWeb/eSocial.</span>
     </div>
-    <div class="tag trab">
+    <div class="tag trab" data-regimes="simples mei presumido real">
       DCTFWeb
       <span class="sub">Declaração consolidada de INSS + IRRF. Transmissão e pagamento até dia 20.</span>
     </div>
-    <div class="tag trab">
+    <div class="tag trab" data-regimes="todos">
       Simples Doméstico (DAE)
       <span class="sub">INSS patronal + FGTS + seguro acidente + IRRF do empregado doméstico.</span>
     </div>
@@ -597,7 +733,7 @@
   <!-- Dia 15 -->
   <td>
     <div class="day blue">15</div>
-    <div class="tag federal">
+    <div class="tag federal" data-regimes="presumido real">
       PIS / COFINS RF — Autopeças
       <span class="sub">Retidos na fonte — 1ª quinzena mês anterior. DARF cód. 4574 (PIS) e 7987 (COFINS).</span>
     </div>
@@ -606,19 +742,11 @@
   <!-- Dia 20 -->
   <td>
     <div class="day dark">20</div>
-    <div class="tag federal">
-      IRPJ
-      <span class="sub">Estimativa mensal (Lucro Real) ou trimestral (Lucro Presumido). DARF cód. 2362 / 5993.</span>
-    </div>
-    <div class="tag federal">
-      CSLL
-      <span class="sub">Contribuição Social sobre o Lucro Líquido. Estimativa mensal ou trimestral. DARF cód. 2372 / 6012.</span>
-    </div>
-    <div class="tag federal">
+    <div class="tag federal" data-regimes="presumido real">
       IRRF s/ Serviços
       <span class="sub">Retido na fonte sobre pagamentos a PF e PJ (serviços, aluguéis, royalties). DARF cód. 1708 / 4600.</span>
     </div>
-    <div class="tag federal">
+    <div class="tag federal" data-regimes="presumido real">
       COFINS / CSLL / PIS RF
       <span class="sub">Retidos sobre pagamentos PJ→PJ (serviços em geral). Base: Art. 35, Lei 10.833/2003.</span>
     </div>
@@ -627,24 +755,49 @@
   <!-- Dia 25 / ÚDU -->
   <td>
     <div class="day blue">25</div>
-    <div class="tag federal">
-      PIS / PASEP
-      <span class="sub">Cumulativo cód. 8109 · Não-cumulativo cód. 6912. Vence dia 25.</span>
+    <div class="tag federal" data-regimes="presumido">
+      PIS / PASEP — Cumulativo
+      <span class="sub">Regime cumulativo, comum no Lucro Presumido. DARF cód. 8109. Vence dia 25, antecipando quando não houver expediente bancário.</span>
     </div>
-    <div class="tag federal">
-      COFINS
-      <span class="sub">Cumulativa cód. 2172 · Não-cumulativa cód. 5856. Vence dia 25.</span>
+    <div class="tag federal" data-regimes="real">
+      PIS / PASEP — Não cumulativo
+      <span class="sub">Regime não cumulativo, comum no Lucro Real. DARF cód. 6912. Vence dia 25, antecipando quando não houver expediente bancário.</span>
     </div>
-    <div class="tag federal">
+    <div class="tag federal" data-regimes="presumido">
+      COFINS — Cumulativa
+      <span class="sub">Regime cumulativo, comum no Lucro Presumido. DARF cód. 2172. Vence dia 25, antecipando quando não houver expediente bancário.</span>
+    </div>
+    <div class="tag federal" data-regimes="real">
+      COFINS — Não cumulativa
+      <span class="sub">Regime não cumulativo, comum no Lucro Real. DARF cód. 5856. Vence dia 25, antecipando quando não houver expediente bancário.</span>
+    </div>
+    <div class="tag federal" data-regimes="presumido real">
       IPI
       <span class="sub">Indústrias e equiparadas fora do Simples. Vence dia 25.</span>
     </div>
+    <div class="day dark" style="margin-top:8px">Últ. dia útil</div>
+    <div class="tag federal" data-regimes="real">
+      IRPJ — Lucro Real
+      <span class="sub">Estimativa mensal ou quota de apuração trimestral. A Agenda Tributária de 2026 lista vencimento no último dia útil do mês.</span>
+    </div>
+    <div class="tag federal" data-regimes="presumido">
+      IRPJ — Lucro Presumido
+      <span class="sub">Apuração trimestral, em quota única ou quotas mensais. A Agenda Tributária de 2026 lista vencimento no último dia útil do mês subsequente ao trimestre.</span>
+    </div>
+    <div class="tag federal" data-regimes="real">
+      CSLL — Lucro Real
+      <span class="sub">Estimativa mensal ou quota de apuração trimestral. A Agenda Tributária de 2026 lista vencimento no último dia útil do mês.</span>
+    </div>
+    <div class="tag federal" data-regimes="presumido">
+      CSLL — Lucro Presumido
+      <span class="sub">Apuração trimestral, em quota única ou quotas mensais. A Agenda Tributária de 2026 lista vencimento no último dia útil do mês subsequente ao trimestre.</span>
+    </div>
     <div class="day gray" style="margin-top:8px">ÚDU</div>
-    <div class="tag federal">
+    <div class="tag federal" data-regimes="presumido real">
       DCTF Mensal
       <span class="sub">Declaração de Débitos e Créditos Tributários. Até o 15º dia útil do 2º mês subsequente.</span>
     </div>
-    <div class="tag federal">
+    <div class="tag federal" data-regimes="presumido real">
       EFD-Contribuições
       <span class="sub">Escrituração digital de PIS, COFINS e CPRB. Até o 10º dia útil do 2º mês subsequente.</span>
     </div>
@@ -661,11 +814,11 @@
   <!-- Dia 20 -->
   <td>
     <div class="day dark">20</div>
-    <div class="tag simples">
+    <div class="tag simples" data-regimes="simples">
       DAS — Simples Nacional
       <span class="sub">Unifica IRPJ, CSLL, PIS, COFINS, CPP (INSS patronal), ISS e ICMS em uma guia. Competência do mês anterior.</span>
     </div>
-    <div class="tag simples">
+    <div class="tag simples" data-regimes="mei">
       DAS-MEI
       <span class="sub">Valor fixo mensal: INSS (5% salário mínimo) + ISS e/ou ICMS fixo conforme atividade.</span>
     </div>
@@ -682,11 +835,11 @@
   <!-- 9–15 -->
   <td>
     <div class="day amber">9–15</div>
-    <div class="tag estadual">
+    <div class="tag estadual" data-regimes="presumido real">
       ICMS (saídas)
       <span class="sub">Prazo entre dias 9 e 20 conforme cada UF. SP→20 · MG→12 · RJ→10 · RS→12. Consulte a SEFAZ do seu estado.</span>
     </div>
-    <div class="tag estadual">
+    <div class="tag estadual" data-regimes="presumido real">
       ICMS-ST (Substituição Tributária)
       <span class="sub">Geralmente dias 9 ou 10 do mês seguinte, variando por estado e segmento. Verifique o protocolo ICMS aplicável.</span>
     </div>
@@ -695,11 +848,11 @@
   <!-- 15–20 -->
   <td>
     <div class="day amber">15–20</div>
-    <div class="tag estadual">
+    <div class="tag estadual" data-regimes="presumido real">
       ICMS Difal
       <span class="sub">Diferencial de Alíquota em operações interestaduais com consumidor final não contribuinte. Prazo varia por UF.</span>
     </div>
-    <div class="tag estadual">
+    <div class="tag estadual" data-regimes="presumido real">
       EFD ICMS / IPI
       <span class="sub">Escrituração Fiscal Digital. Entrega até o último dia útil do mês seguinte ao período de apuração.</span>
     </div>
@@ -708,7 +861,7 @@
   <!-- Anual -->
   <td>
     <div class="day gray">Jan–Abr</div>
-    <div class="tag estadual">
+    <div class="tag estadual" data-regimes="simples mei presumido real">
       IPVA (parcelas anuais)
       <span class="sub">Vencimento anual parcelado conforme final de placa. Calendário definido por cada estado.</span>
     </div>
@@ -724,11 +877,11 @@
   <!-- 5–15 -->
   <td>
     <div class="day amber">5–15</div>
-    <div class="tag municipal">
+    <div class="tag municipal" data-regimes="presumido real">
       ISS (prestador de serviços)
       <span class="sub">Prazo geralmente entre dias 5 e 15 do mês seguinte. Consulte a legislação do seu município.</span>
     </div>
-    <div class="tag municipal">
+    <div class="tag municipal" data-regimes="presumido real">
       DMS / NFS-e
       <span class="sub">Declaração Mensal de Serviços ou escrituração de notas fiscais eletrônicas. Prazo e formato variam por prefeitura.</span>
     </div>
@@ -737,7 +890,7 @@
   <!-- 10–20 -->
   <td>
     <div class="day amber">10–20</div>
-    <div class="tag municipal">
+    <div class="tag municipal" data-regimes="presumido real">
       ISS Retido na Fonte
       <span class="sub">Tomador de serviço retém o ISS e recolhe à prefeitura. Prazo e código variam por município.</span>
     </div>
@@ -746,7 +899,7 @@
   <!-- Anual -->
   <td>
     <div class="day gray">Jan–Mar</div>
-    <div class="tag municipal">
+    <div class="tag municipal" data-regimes="simples mei presumido real">
       IPTU (parcelas anuais)
       <span class="sub">1ª parcela ou cota única em jan/fev com desconto. Parcelamento até out/nov. Prazo varia por prefeitura.</span>
     </div>
@@ -761,15 +914,15 @@
 <div class="anuais-wrap" data-category="anual">
   <div class="anuais-head">📌 Obrigações Anuais &amp; Específicas — Datas Fixas no Ano</div>
   <div class="anuais-body">
-    <div class="tag-inline">31/jan<span class="sub">Opção Simples Nacional</span></div>
-    <div class="tag-inline">31/mar<span class="sub">DEFIS (Simples Nacional)</span></div>
-    <div class="tag-inline">Até 31/mai<span class="sub">DIRPF — Imposto de Renda PF</span></div>
-    <div class="tag-inline">31/mai<span class="sub">DASN-SIMEI (MEI)</span></div>
-    <div class="tag-inline">Últ. dia útil/mai<span class="sub">ECD — Escrituração Contábil Digital</span></div>
-    <div class="tag-inline">Últ. dia útil/jul<span class="sub">ECF — Escrituração Contábil Fiscal</span></div>
-    <div class="tag-inline">Trimestral<span class="sub">IRPJ / CSLL — Lucro Presumido</span></div>
-    <div class="tag-inline">30/nov e 20/dez<span class="sub">13º Salário (1ª e 2ª parcelas)</span></div>
-    <div class="tag-inline">Mensal<span class="sub">Férias CLT — aviso 30 dias antes</span></div>
+    <div class="tag-inline" data-regimes="simples mei">30/jan/2026<span class="sub">Opção Simples Nacional / Simei</span></div>
+    <div class="tag-inline" data-regimes="simples">31/mar<span class="sub">DEFIS (Simples Nacional)</span></div>
+    <div class="tag-inline" data-regimes="todos">Até 29/mai/2026<span class="sub">DIRPF — Imposto de Renda PF</span></div>
+    <div class="tag-inline" data-regimes="mei">31/mai<span class="sub">DASN-SIMEI (MEI)</span></div>
+    <div class="tag-inline" data-regimes="presumido real">Últ. dia útil/mai<span class="sub">ECD — Escrituração Contábil Digital</span></div>
+    <div class="tag-inline" data-regimes="presumido real">Últ. dia útil/jul<span class="sub">ECF — Escrituração Contábil Fiscal</span></div>
+    <div class="tag-inline" data-regimes="presumido">Trimestral<span class="sub">IRPJ / CSLL — Lucro Presumido</span></div>
+    <div class="tag-inline" data-regimes="simples mei presumido real">30/nov e 20/dez<span class="sub">13º Salário (1ª e 2ª parcelas)</span></div>
+    <div class="tag-inline" data-regimes="simples mei presumido real">Mensal<span class="sub">Férias CLT — aviso 30 dias antes</span></div>
   </div>
 </div>
 
@@ -783,40 +936,157 @@
     <li><strong>FGTS Digital:</strong> pagamento exclusivo via PIX, até 21h59m59s (horário de Brasília). Antecipe se o dia 7 cair em feriado ou fim de semana.</li>
     <li><strong>DCTFWeb:</strong> gerada automaticamente pelo cruzamento de eSocial + EFD-Reinf. Transmissão e pagamento até o dia 20.</li>
     <li><strong>ÚDU</strong> = Último Dia Útil do mês.</li>
-    <li>Fontes: <em>Receita Federal do Brasil · Caixa Econômica Federal · SEFAZ/SP · Escola Superior ESN · Davanzo Contabilidade · Stone Contabilidade · 2026.</em></li>
+    <li>Fontes oficiais consultadas: <em>Agenda Tributária 2026 da Receita Federal · Portal do Simples Nacional · Ministério do Trabalho e Emprego / FGTS Digital · eSocial · SEFAZ e prefeituras conforme UF/município.</em></li>
   </ul>
 </div>
 
 <script>
-  const filterButtons = document.querySelectorAll('.leg[data-filter]');
+  const categoryButtons = document.querySelectorAll('.leg[data-filter-category]');
+  const regimeButtons = document.querySelectorAll('.leg[data-filter-regime]');
   const rows = document.querySelectorAll('tbody tr[data-category]');
   const annualSection = document.querySelector('.anuais-wrap[data-category="anual"]');
   const tableWrap = document.querySelector('.wrap');
+  const emptyMessage = document.querySelector('.filter-empty');
+  const taxSearch = document.querySelector('#tax-search');
+  const clearSearch = document.querySelector('.clear-search');
+  const searchCount = document.querySelector('.search-count');
 
-  filterButtons.forEach((button) => {
+  let selectedCategory = 'todos';
+  let selectedRegime = 'todos';
+  let searchTerm = '';
+
+  const normalizeText = (value) => value
+    .toLowerCase()
+    .normalize('NFD')
+    .replace(/[\u0300-\u036f]/g, '');
+
+  const matchesRegime = (item) => {
+    const regimes = (item.dataset.regimes || 'todos').split(' ');
+    return selectedRegime === 'todos' || regimes.includes(selectedRegime);
+  };
+
+  const matchesSearch = (item) => {
+    if (!searchTerm) return true;
+    return normalizeText(item.textContent).includes(searchTerm);
+  };
+
+  const setActiveButton = (buttons, activeButton) => {
+    buttons.forEach((button) => {
+      const isActive = button === activeButton;
+      button.classList.toggle('is-active', isActive);
+      button.setAttribute('aria-pressed', String(isActive));
+    });
+  };
+
+  const updateDayMarkers = (container) => {
+    let activeDay = null;
+    let activeDayHasVisibleItem = false;
+
+    const updateActiveDay = () => {
+      if (activeDay) {
+        activeDay.classList.toggle('is-hidden', !activeDayHasVisibleItem);
+      }
+    };
+
+    Array.from(container.children).forEach((child) => {
+      if (child.classList.contains('day')) {
+        updateActiveDay();
+        activeDay = child;
+        activeDayHasVisibleItem = false;
+        return;
+      }
+
+      if (child.classList.contains('tag') && !child.classList.contains('is-hidden')) {
+        activeDayHasVisibleItem = true;
+      }
+    });
+
+    updateActiveDay();
+    return Boolean(container.querySelector('.tag:not(.is-hidden)'));
+  };
+
+  const applyFilters = () => {
+    let visibleRows = 0;
+    let visibleItems = 0;
+
+    rows.forEach((row) => {
+      const categoryMatches = selectedCategory === 'todos' || row.dataset.category === selectedCategory;
+      let rowHasVisibleItems = false;
+
+      row.querySelectorAll('.tag').forEach((tag) => {
+        const isVisible = categoryMatches && matchesRegime(tag) && matchesSearch(tag);
+        tag.classList.toggle('is-hidden', !isVisible);
+        if (isVisible) {
+          rowHasVisibleItems = true;
+          visibleItems += 1;
+        }
+      });
+
+      row.querySelectorAll('td:not(.row-head)').forEach((cell) => {
+        updateDayMarkers(cell);
+      });
+
+      const shouldShowRow = categoryMatches && rowHasVisibleItems;
+      row.classList.toggle('is-hidden', !shouldShowRow);
+      if (shouldShowRow) visibleRows += 1;
+    });
+
+    const annualCategoryMatches = selectedCategory === 'todos' || selectedCategory === 'anual';
+    let annualHasVisibleItems = false;
+
+    annualSection.querySelectorAll('.tag-inline').forEach((tag) => {
+      const isVisible = annualCategoryMatches && matchesRegime(tag) && matchesSearch(tag);
+      tag.classList.toggle('is-hidden', !isVisible);
+      if (isVisible) {
+        annualHasVisibleItems = true;
+        visibleItems += 1;
+      }
+    });
+
+    const showAnnual = annualCategoryMatches && annualHasVisibleItems;
+
+    tableWrap.classList.toggle('is-hidden', visibleRows === 0);
+    annualSection.classList.toggle('is-hidden', !showAnnual);
+    emptyMessage.classList.toggle('is-visible', visibleRows === 0 && !showAnnual);
+
+    if (searchTerm) {
+      searchCount.textContent = visibleItems === 1
+        ? '1 prazo encontrado para a pesquisa.'
+        : `${visibleItems} prazos encontrados para a pesquisa.`;
+    } else {
+      searchCount.textContent = 'Mostrando todos os prazos compatíveis com os filtros.';
+    }
+  };
+
+  categoryButtons.forEach((button) => {
     button.addEventListener('click', () => {
-      const selected = button.dataset.filter;
-      const showAll = selected === 'todos';
-      const showAnnual = showAll || selected === 'anual';
-
-      filterButtons.forEach((item) => {
-        const isActive = item === button;
-        item.classList.toggle('is-active', isActive);
-        item.setAttribute('aria-pressed', String(isActive));
-      });
-
-      let visibleRows = 0;
-
-      rows.forEach((row) => {
-        const isVisible = showAll || row.dataset.category === selected;
-        row.classList.toggle('is-hidden', !isVisible);
-        if (isVisible) visibleRows += 1;
-      });
-
-      tableWrap.classList.toggle('is-hidden', visibleRows === 0);
-      annualSection.classList.toggle('is-hidden', !showAnnual);
+      selectedCategory = button.dataset.filterCategory;
+      setActiveButton(categoryButtons, button);
+      applyFilters();
     });
   });
+
+  regimeButtons.forEach((button) => {
+    button.addEventListener('click', () => {
+      selectedRegime = button.dataset.filterRegime;
+      setActiveButton(regimeButtons, button);
+      applyFilters();
+    });
+  });
+
+  taxSearch.addEventListener('input', () => {
+    searchTerm = normalizeText(taxSearch.value.trim());
+    applyFilters();
+  });
+
+  clearSearch.addEventListener('click', () => {
+    taxSearch.value = '';
+    searchTerm = '';
+    taxSearch.focus();
+    applyFilters();
+  });
+
+  applyFilters();
 </script>
 
 </body>
