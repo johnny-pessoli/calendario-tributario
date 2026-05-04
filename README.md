@@ -84,6 +84,7 @@ A pagina apresenta:
 - Separacao por semanas/faixas de vencimento.
 - Marcadores visuais de datas e periodos.
 - Tags coloridas por categoria tributaria.
+- Selo visual de verificacoes de seguranca ativas, sem expor detalhes da ferramenta.
 - Layout responsivo: tabela em desktop e cards empilhados em telas pequenas.
 - Tipografia com espacamento vertical ampliado para melhorar a leitura.
 - Filtros clicaveis por categoria na legenda.

@@ -76,6 +76,35 @@
     letter-spacing: 0;
     line-height: 1.35;
   }
+  .trust-seals {
+    align-items: center;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    justify-content: center;
+    margin-top: 10px;
+  }
+  .security-seal {
+    align-items: center;
+    background: #ECFDF5;
+    border: 1.5px solid #34D399;
+    border-radius: 999px;
+    color: #065F46;
+    display: inline-flex;
+    font-size: 0.72rem;
+    font-weight: 800;
+    gap: 7px;
+    line-height: 1.35;
+    padding: 6px 13px;
+  }
+  .security-seal .seal-dot {
+    background: #059669;
+    border-radius: 50%;
+    box-shadow: 0 0 0 3px rgba(5, 150, 105, 0.14);
+    flex: 0 0 auto;
+    height: 9px;
+    width: 9px;
+  }
 
   /* ── FILTROS ── */
   .filters {
@@ -495,6 +524,15 @@
       max-width: 100%;
     }
 
+    .trust-seals {
+      justify-content: stretch;
+    }
+
+    .security-seal {
+      justify-content: center;
+      width: 100%;
+    }
+
     .reforma {
       padding: 12px;
       gap: 9px;
@@ -660,7 +698,13 @@
 <div class="hero">
   <h1>📅 Calendário de <em>Vencimentos Tributários</em> Mensais — Brasil</h1>
   <p>Federal · Estadual · Municipal · Trabalhista / Previdenciário · Simples Nacional / MEI</p>
-  <span class="pill">✅ Válido para qualquer mês do ano</span>
+  <div class="trust-seals">
+    <span class="pill">✅ Válido para qualquer mês do ano</span>
+    <span class="security-seal" aria-label="Aplicação com verificações de segurança automatizadas">
+      <span class="seal-dot" aria-hidden="true"></span>
+      Verificações de segurança ativas
+    </span>
+  </div>
 </div>
 
 <!-- REFORMA -->
