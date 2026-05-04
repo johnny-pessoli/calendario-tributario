@@ -1,0 +1,61 @@
+{
+  "year": 2026,
+  "sources": [
+    {
+      "id": "rf-agenda-maio-2026",
+      "name": "Receita Federal - Agenda Tributaria Maio/2026",
+      "url": "https://www.gov.br/receitafederal/pt-br/assuntos/agenda-tributaria/2026/maio",
+      "authority": "Receita Federal",
+      "affects": ["agenda tributaria", "federal", "prazos"]
+    },
+    {
+      "id": "rf-dia-20-maio-2026",
+      "name": "Receita Federal - Vencimentos 20/05/2026",
+      "url": "https://www.gov.br/receitafederal/pt-br/assuntos/agenda-tributaria/2026/maio/dia-20-05-2026",
+      "authority": "Receita Federal",
+      "affects": ["DCTFWeb", "PGDAS-D", "IRRF", "INSS", "Simples Domestico"]
+    },
+    {
+      "id": "rf-dia-25-maio-2026",
+      "name": "Receita Federal - Vencimentos 25/05/2026",
+      "url": "https://www.gov.br/receitafederal/pt-br/assuntos/agenda-tributaria/2026/maio/dia-25-05-2026",
+      "authority": "Receita Federal",
+      "affects": ["PIS", "COFINS", "IPI", "federal"]
+    },
+    {
+      "id": "rf-dia-29-maio-2026",
+      "name": "Receita Federal - Vencimentos 29/05/2026",
+      "url": "https://www.gov.br/receitafederal/pt-br/assuntos/agenda-tributaria/2026/maio/dia-29-05-2026",
+      "authority": "Receita Federal",
+      "affects": ["IRPJ", "CSLL", "Lucro Real", "Lucro Presumido", "DIRPF"]
+    },
+    {
+      "id": "rf-simples-prorrogacao-mg-2026",
+      "name": "Receita Federal - Prorrogacao Simples Nacional MG 2026",
+      "url": "https://www.gov.br/receitafederal/pt-br/assuntos/noticias/2026/marco/simples-nacional-prazos-de-tributos-sao-prorrogados-para-contribuintes-de-municipios-mineiros-atingidos-por-fortes-chuvas",
+      "authority": "Receita Federal",
+      "affects": ["Simples Nacional", "MEI", "SIMEI", "PGDAS-D", "prorrogacao"]
+    },
+    {
+      "id": "simples-noticias",
+      "name": "Portal do Simples Nacional - Noticias",
+      "url": "https://www8.receita.fazenda.gov.br/SIMPLESNACIONAL/Noticias/TodasNoticias.aspx",
+      "authority": "Portal do Simples Nacional",
+      "affects": ["Simples Nacional", "MEI", "SIMEI", "DEFIS", "DASN-SIMEI"]
+    },
+    {
+      "id": "mte-fgts-digital",
+      "name": "MTE - FGTS Digital",
+      "url": "https://www.gov.br/trabalho-e-emprego/pt-br/servicos/empregador/fgtsdigital",
+      "authority": "Ministerio do Trabalho e Emprego",
+      "affects": ["FGTS Digital", "trabalhista"]
+    },
+    {
+      "id": "govbr-mei-das",
+      "name": "Gov.br - MEI DAS Mensal",
+      "url": "https://www.gov.br/empresas-e-negocios/pt-br/empreendedor/perguntas-frequentes/pagamento-da-contribuicao-mensal-carne-mensal/quais-impostos-devem-ser-pagos-1",
+      "authority": "Empresas e Negocios / gov.br",
+      "affects": ["MEI", "DAS-MEI", "SIMEI"]
+    }
+  ]
+}

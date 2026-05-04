@@ -3,6 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self' 'unsafe-inline'; img-src 'self' data:; object-src 'none'; base-uri 'self'; form-action 'self'; frame-ancestors 'none'; upgrade-insecure-requests">
 <title>Calendário de Vencimentos Tributários — Brasil</title>
 <style>
   :root {
@@ -228,6 +229,50 @@
   }
   .reforma .ico { font-size: 1.3rem; flex-shrink: 0; }
   .reforma strong { font-family: Arial, Helvetica, sans-serif; font-size: 0.84rem; display: block; margin-bottom: 4px; line-height: 1.35; }
+
+  .official-updates {
+    background: #FFFBEB;
+    border: 1.5px solid #FBBF24;
+    border-left: 5px solid #D97706;
+    border-radius: 10px;
+    color: #78350F;
+    display: none;
+    font-size: 0.76rem;
+    line-height: 1.65;
+    margin-bottom: 18px;
+    padding: 13px 15px;
+  }
+  .official-updates.is-visible { display: block; }
+  .official-updates strong {
+    color: #451A03;
+    display: block;
+    font-size: 0.84rem;
+    line-height: 1.35;
+    margin-bottom: 6px;
+  }
+  .official-updates ul {
+    display: grid;
+    gap: 8px;
+    list-style: none;
+    margin-top: 8px;
+  }
+  .official-updates li {
+    border-top: 1px solid rgba(217, 119, 6, 0.22);
+    padding-top: 8px;
+  }
+  .official-updates a {
+    color: #1A56DB;
+    font-weight: 700;
+    text-decoration: none;
+  }
+  .official-updates a:hover { text-decoration: underline; }
+  .official-updates .meta {
+    color: #92400E;
+    display: block;
+    font-size: 0.68rem;
+    font-weight: 700;
+    margin-top: 2px;
+  }
 
   /* ── TABELA PRINCIPAL ── */
   .wrap {
@@ -627,6 +672,8 @@
   </div>
 </div>
 
+<div class="official-updates" aria-live="polite"></div>
+
 <!-- FILTROS -->
 <div class="filters">
   <div class="filter-group legenda" aria-label="Filtro por categoria">
@@ -940,154 +987,8 @@
   </ul>
 </div>
 
-<script>
-  const categoryButtons = document.querySelectorAll('.leg[data-filter-category]');
-  const regimeButtons = document.querySelectorAll('.leg[data-filter-regime]');
-  const rows = document.querySelectorAll('tbody tr[data-category]');
-  const annualSection = document.querySelector('.anuais-wrap[data-category="anual"]');
-  const tableWrap = document.querySelector('.wrap');
-  const emptyMessage = document.querySelector('.filter-empty');
-  const taxSearch = document.querySelector('#tax-search');
-  const clearSearch = document.querySelector('.clear-search');
-  const searchCount = document.querySelector('.search-count');
-
-  let selectedCategory = 'todos';
-  let selectedRegime = 'todos';
-  let searchTerm = '';
-
-  const normalizeText = (value) => value
-    .toLowerCase()
-    .normalize('NFD')
-    .replace(/[\u0300-\u036f]/g, '');
-
-  const matchesRegime = (item) => {
-    const regimes = (item.dataset.regimes || 'todos').split(' ');
-    return selectedRegime === 'todos' || regimes.includes(selectedRegime);
-  };
-
-  const matchesSearch = (item) => {
-    if (!searchTerm) return true;
-    return normalizeText(item.textContent).includes(searchTerm);
-  };
-
-  const setActiveButton = (buttons, activeButton) => {
-    buttons.forEach((button) => {
-      const isActive = button === activeButton;
-      button.classList.toggle('is-active', isActive);
-      button.setAttribute('aria-pressed', String(isActive));
-    });
-  };
-
-  const updateDayMarkers = (container) => {
-    let activeDay = null;
-    let activeDayHasVisibleItem = false;
-
-    const updateActiveDay = () => {
-      if (activeDay) {
-        activeDay.classList.toggle('is-hidden', !activeDayHasVisibleItem);
-      }
-    };
-
-    Array.from(container.children).forEach((child) => {
-      if (child.classList.contains('day')) {
-        updateActiveDay();
-        activeDay = child;
-        activeDayHasVisibleItem = false;
-        return;
-      }
-
-      if (child.classList.contains('tag') && !child.classList.contains('is-hidden')) {
-        activeDayHasVisibleItem = true;
-      }
-    });
-
-    updateActiveDay();
-    return Boolean(container.querySelector('.tag:not(.is-hidden)'));
-  };
-
-  const applyFilters = () => {
-    let visibleRows = 0;
-    let visibleItems = 0;
-
-    rows.forEach((row) => {
-      const categoryMatches = selectedCategory === 'todos' || row.dataset.category === selectedCategory;
-      let rowHasVisibleItems = false;
-
-      row.querySelectorAll('.tag').forEach((tag) => {
-        const isVisible = categoryMatches && matchesRegime(tag) && matchesSearch(tag);
-        tag.classList.toggle('is-hidden', !isVisible);
-        if (isVisible) {
-          rowHasVisibleItems = true;
-          visibleItems += 1;
-        }
-      });
-
-      row.querySelectorAll('td:not(.row-head)').forEach((cell) => {
-        updateDayMarkers(cell);
-      });
-
-      const shouldShowRow = categoryMatches && rowHasVisibleItems;
-      row.classList.toggle('is-hidden', !shouldShowRow);
-      if (shouldShowRow) visibleRows += 1;
-    });
-
-    const annualCategoryMatches = selectedCategory === 'todos' || selectedCategory === 'anual';
-    let annualHasVisibleItems = false;
-
-    annualSection.querySelectorAll('.tag-inline').forEach((tag) => {
-      const isVisible = annualCategoryMatches && matchesRegime(tag) && matchesSearch(tag);
-      tag.classList.toggle('is-hidden', !isVisible);
-      if (isVisible) {
-        annualHasVisibleItems = true;
-        visibleItems += 1;
-      }
-    });
-
-    const showAnnual = annualCategoryMatches && annualHasVisibleItems;
-
-    tableWrap.classList.toggle('is-hidden', visibleRows === 0);
-    annualSection.classList.toggle('is-hidden', !showAnnual);
-    emptyMessage.classList.toggle('is-visible', visibleRows === 0 && !showAnnual);
-
-    if (searchTerm) {
-      searchCount.textContent = visibleItems === 1
-        ? '1 prazo encontrado para a pesquisa.'
-        : `${visibleItems} prazos encontrados para a pesquisa.`;
-    } else {
-      searchCount.textContent = 'Mostrando todos os prazos compatíveis com os filtros.';
-    }
-  };
-
-  categoryButtons.forEach((button) => {
-    button.addEventListener('click', () => {
-      selectedCategory = button.dataset.filterCategory;
-      setActiveButton(categoryButtons, button);
-      applyFilters();
-    });
-  });
-
-  regimeButtons.forEach((button) => {
-    button.addEventListener('click', () => {
-      selectedRegime = button.dataset.filterRegime;
-      setActiveButton(regimeButtons, button);
-      applyFilters();
-    });
-  });
-
-  taxSearch.addEventListener('input', () => {
-    searchTerm = normalizeText(taxSearch.value.trim());
-    applyFilters();
-  });
-
-  clearSearch.addEventListener('click', () => {
-    taxSearch.value = '';
-    searchTerm = '';
-    taxSearch.focus();
-    applyFilters();
-  });
-
-  applyFilters();
-</script>
+<script src="data/government-updates.js" defer></script>
+<script src="scripts/app.js" defer></script>
 
 </body>
 </html>

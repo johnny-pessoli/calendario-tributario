@@ -1,0 +1,61 @@
+{
+  "checkedAt": "2026-05-04T18:00:09.914Z",
+  "sources": {
+    "rf-agenda-maio-2026": {
+      "hash": "f81bea7f7db6214ff9a74fd49a6d347c7d0a53d50fc834dd870d1c0e00e914d7",
+      "checkedAt": "2026-05-04T18:00:09.914Z",
+      "title": "Agenda Tributária",
+      "updatedAt": "28/04/2026 12h12",
+      "url": "https://www.gov.br/receitafederal/pt-br/assuntos/agenda-tributaria/2026/maio"
+    },
+    "rf-dia-20-maio-2026": {
+      "hash": "e86cce40a5283cd3dee138977f4bd6287346b52f297c7aed70cdbc9227b59724",
+      "checkedAt": "2026-05-04T18:00:09.914Z",
+      "title": "Dia 20/05/2026",
+      "updatedAt": "27/04/2026 16h58",
+      "url": "https://www.gov.br/receitafederal/pt-br/assuntos/agenda-tributaria/2026/maio/dia-20-05-2026"
+    },
+    "rf-dia-25-maio-2026": {
+      "hash": "9b80be8957c45a74244621517861802829494048799172d9ee4879c6f3ba4065",
+      "checkedAt": "2026-05-04T18:00:09.914Z",
+      "title": "Dia 25/05/2026",
+      "updatedAt": "27/04/2026 16h58",
+      "url": "https://www.gov.br/receitafederal/pt-br/assuntos/agenda-tributaria/2026/maio/dia-25-05-2026"
+    },
+    "rf-dia-29-maio-2026": {
+      "hash": "8eb6935df963e2b907bf3e9eafc7b57ee25816ffbd17e1aeaa74baf99fd1a00d",
+      "checkedAt": "2026-05-04T18:00:09.914Z",
+      "title": "Dia 29/05/2026",
+      "updatedAt": "27/04/2026 16h58",
+      "url": "https://www.gov.br/receitafederal/pt-br/assuntos/agenda-tributaria/2026/maio/dia-29-05-2026"
+    },
+    "rf-simples-prorrogacao-mg-2026": {
+      "hash": "cc899d38fc43ebd6e4d760b446e8b21c235e8b3881cf3b0461cdbc22d20feb50",
+      "checkedAt": "2026-05-04T18:00:09.914Z",
+      "title": "Simples Nacional: prazos de tributos são prorrogados para contribuintes de municípios mineiros atingidos por fortes chuvas",
+      "updatedAt": "05/03/2026 10h48",
+      "url": "https://www.gov.br/receitafederal/pt-br/assuntos/noticias/2026/marco/simples-nacional-prazos-de-tributos-sao-prorrogados-para-contribuintes-de-municipios-mineiros-atingidos-por-fortes-chuvas"
+    },
+    "simples-noticias": {
+      "hash": "109019e5909710747eb69da6881e28b5a0ee3f77eb7047c2ba5d968200bb34d6",
+      "checkedAt": "2026-05-04T18:00:09.914Z",
+      "title": "Simples Nacional",
+      "updatedAt": "18/02/2021",
+      "url": "https://www8.receita.fazenda.gov.br/SIMPLESNACIONAL/Noticias/TodasNoticias.aspx"
+    },
+    "mte-fgts-digital": {
+      "hash": "bab03b61695929e72b08330d7deceb647c20d2c8777109611dd727035db1bb71",
+      "checkedAt": "2026-05-04T18:00:09.914Z",
+      "title": "FGTS Digital",
+      "updatedAt": null,
+      "url": "https://www.gov.br/trabalho-e-emprego/pt-br/servicos/empregador/fgtsdigital"
+    },
+    "govbr-mei-das": {
+      "hash": "341a9d8e9e9252d361f35c09f5027372cce12aba7cf723176adb92d1cb11244c",
+      "checkedAt": "2026-05-04T18:00:09.914Z",
+      "title": "Quais impostos devem ser pagos por quem é MEI? Quais são os valores e até quando devem ser pagos?",
+      "updatedAt": "02/01/2024 18h02",
+      "url": "https://www.gov.br/empresas-e-negocios/pt-br/empreendedor/perguntas-frequentes/pagamento-da-contribuicao-mensal-carne-mensal/quais-impostos-devem-ser-pagos-1"
+    }
+  }
+}

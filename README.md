@@ -45,6 +45,37 @@ Depois acesse:
 http://localhost:8000
 ```
 
+## Automacao de atualizacoes oficiais
+
+O projeto inclui uma automacao para monitorar fontes oficiais do governo brasileiro e destacar mudancas que possam impactar prazos tributarios.
+
+Execucao manual:
+
+```powershell
+node scripts/check-government-updates.mjs
+```
+
+Arquivos envolvidos:
+
+- `data/government-sources.json`: lista de fontes oficiais monitoradas.
+- `data/government-updates-state.json`: ultimo estado conhecido de cada fonte.
+- `data/government-updates.js`: arquivo consumido pelo `index.html` para exibir alertas.
+- `.github/workflows/check-government-updates.yml`: verificacao diaria via GitHub Actions.
+
+Importante: a automacao detecta alteracoes em fontes oficiais e destaca essas mudancas para revisao. Ela nao altera silenciosamente prazos fiscais quando a fonte for uma noticia ou texto livre, pois prorrogacoes podem ser regionais, condicionais ou depender de interpretacao normativa.
+
+## Seguranca
+
+O projeto possui uma auditoria registrada em `SECURITY.md`.
+
+Controles principais:
+
+- Renderizacao segura dos alertas com DOM APIs, sem `innerHTML`.
+- Content Security Policy no HTML.
+- Allowlist de dominios oficiais no script de automacao.
+- Timeout e limite de tamanho nas respostas das fontes oficiais.
+- Workflow sem action de terceiro para commit automatico.
+
 ## Conteudo exibido
 
 A pagina apresenta:
@@ -58,6 +89,7 @@ A pagina apresenta:
 - Filtros clicaveis por categoria na legenda.
 - Filtro combinado por regime tributario: Simples Nacional, MEI/SIMEI, Lucro Presumido e Lucro Real.
 - Pesquisa por nome de imposto ou obrigacao, combinada com os filtros existentes.
+- Alerta de atualizacoes oficiais quando fontes do governo mudarem.
 - Secao de obrigacoes anuais e especificas.
 - Observacoes sobre dias nao uteis, variacao por UF/municipio e fontes de referencia.
 
@@ -82,6 +114,9 @@ Como nao ha build ou testes automatizados configurados, valide manualmente:
 - Clique nos filtros da legenda: Todos, Federal, Trabalhista, Estadual, Municipal, Simples e Anual.
 - Clique nos filtros de regime tributario e confira se os prazos exibidos correspondem ao regime selecionado.
 - Pesquise por nomes como IRPJ, DAS, FGTS, COFINS ou EFD-Reinf e confira os resultados.
+- Execute `node scripts/check-government-updates.mjs` e confirme se `data/government-updates.js` foi atualizado.
+- Quando houver mudancas oficiais, confira se o alerta aparece no topo da pagina.
+- Confira `SECURITY.md` antes de publicar alteracoes de automacao ou fontes oficiais.
 - Conversao da tabela em cards empilhados em telas menores.
 - Ausencia de sobreposicao entre textos, marcadores e tags.
 - Coerencia dos vencimentos e observacoes com fontes oficiais atualizadas.
@@ -93,6 +128,7 @@ Nao existe `package.json` neste projeto.
 Dependencias atuais:
 
 - Navegador moderno com suporte a HTML5, CSS3 e JavaScript.
+- Node.js 20+ para executar a automacao de verificacao oficial.
 - Fonte Arial/Helvetica disponivel no sistema operacional.
 
 ## Fontes e responsabilidade
