@@ -1,5 +1,5 @@
 window.GOVERNMENT_UPDATES = {
-  "checkedAt": "2026-05-05T11:40:50.321Z",
+  "checkedAt": "2026-05-06T12:11:44.813Z",
   "hasChanges": true,
   "changes": [
     {
@@ -13,10 +13,10 @@ window.GOVERNMENT_UPDATES = {
       ],
       "title": "FGTS Digital",
       "updatedAt": null,
-      "hash": "d896f8f4476b7b95e71f9a90f493d6b585cfe10c18a1a7bcb0a93e7cb079b777",
+      "hash": "1218b70df06d8724b95d3c7b403815718da5ed3bd10ba004e8b17caa98d425df",
       "snippet": "FGTS Digital — Ministério do Trabalho e Emprego Ir para o Conteúdo 1 Ir para a Página Inicial 2 Ir para o menu de Navegação 3 Ir para a Busca 4 Ir para o Mapa do site 5 Atenção! Seu navegador não pode executar javascript. Alguns recursos podem não funcionar corretamente. --\u003E Abrir menu principal de navegação Nome do site --\u003E Ministério do Trabalho e Emprego",
       "changeType": "content-changed",
-      "previousCheckedAt": "2026-05-04T18:00:09.914Z",
+      "previousCheckedAt": "2026-05-05T11:40:50.321Z",
       "previousUpdatedAt": null
     },
     {
@@ -31,10 +31,10 @@ window.GOVERNMENT_UPDATES = {
       ],
       "title": "Quais impostos devem ser pagos por quem é MEI? Quais são os valores e até quando devem ser pagos?",
       "updatedAt": "02/01/2024 18h02",
-      "hash": "2fe8bb8e6855679ac2eb77960e9611f4bc56adc16d8a94059b05c3030e0ad733",
+      "hash": "526cc57b713bd77651497a75e0d4ddba6e0f17a431e83a0d34db8a1152127dc6",
       "snippet": "Quais impostos devem ser pagos por quem é MEI? Quais são os valores e até quando devem ser pagos? — Empresas \u0026 Negócios Ir para o Conteúdo 1 Ir para a Página Inicial 2 Ir para o menu de Navegação 3 Ir para a Busca 4 Ir para o Mapa do site 5 Atenção! Seu navegador não pode executar javascript. Alguns recursos podem não funcionar corretamente. --\u003E Abrir menu p",
       "changeType": "content-changed",
-      "previousCheckedAt": "2026-05-04T18:00:09.914Z",
+      "previousCheckedAt": "2026-05-05T11:40:50.321Z",
       "previousUpdatedAt": "02/01/2024 18h02"
     }
   ],
