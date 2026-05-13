@@ -1,58 +1,58 @@
 {
-  "checkedAt": "2026-05-12T12:20:33.979Z",
+  "checkedAt": "2026-05-13T12:25:33.131Z",
   "sources": {
     "rf-agenda-maio-2026": {
-      "hash": "30f8ab346e8281db14297d2444073a887116bde4553856972e71e086be0fa009",
-      "checkedAt": "2026-05-12T12:20:33.979Z",
+      "hash": "d8c686a60e4a4276a8685800619743f6eec505363aedcf368fd4965d225e2b3d",
+      "checkedAt": "2026-05-13T12:25:33.131Z",
       "title": "Agenda Tributária",
       "updatedAt": "28/04/2026 12h12",
       "url": "https://www.gov.br/receitafederal/pt-br/assuntos/agenda-tributaria/2026/maio"
     },
     "rf-dia-20-maio-2026": {
-      "hash": "ae40b3703f5498541a5f7e9b2076d7200cf35f2baf221aa1a8319cb39ab86bde",
-      "checkedAt": "2026-05-12T12:20:33.979Z",
+      "hash": "830317f3c654ecad84c39aca960529a84745a2de9705325709226252ecca81b8",
+      "checkedAt": "2026-05-13T12:25:33.131Z",
       "title": "Dia 20/05/2026",
       "updatedAt": "27/04/2026 16h58",
       "url": "https://www.gov.br/receitafederal/pt-br/assuntos/agenda-tributaria/2026/maio/dia-20-05-2026"
     },
     "rf-dia-25-maio-2026": {
-      "hash": "a187ff2668dfbe4d88333ce8a1042a5a981936a9d433241e4eed2732cc690cb3",
-      "checkedAt": "2026-05-12T12:20:33.979Z",
+      "hash": "619656710c387adc10b4d2839d257b75ce24356d5b9f15b94a1c077896fa9574",
+      "checkedAt": "2026-05-13T12:25:33.131Z",
       "title": "Dia 25/05/2026",
       "updatedAt": "27/04/2026 16h58",
       "url": "https://www.gov.br/receitafederal/pt-br/assuntos/agenda-tributaria/2026/maio/dia-25-05-2026"
     },
     "rf-dia-29-maio-2026": {
-      "hash": "243128e68d27a80ddd906c9ed32876fd62b60c0ee80de41219e731180a1d737d",
-      "checkedAt": "2026-05-12T12:20:33.979Z",
+      "hash": "b6076c72a5436b90132386b0ac6bdf4f0f807ac2b535f4b7ceaee5d1b49fcb59",
+      "checkedAt": "2026-05-13T12:25:33.131Z",
       "title": "Dia 29/05/2026",
       "updatedAt": "27/04/2026 16h58",
       "url": "https://www.gov.br/receitafederal/pt-br/assuntos/agenda-tributaria/2026/maio/dia-29-05-2026"
     },
     "rf-simples-prorrogacao-mg-2026": {
-      "hash": "fdc0a6991b3a99ed285236df396b69a837fb058b3f53b5e2b578eacd832fc7f2",
-      "checkedAt": "2026-05-12T12:20:33.979Z",
+      "hash": "02a0f782fcd30219a295041a09c6c5d8b76cabd6011897907132e532d6516a61",
+      "checkedAt": "2026-05-13T12:25:33.131Z",
       "title": "Simples Nacional: prazos de tributos são prorrogados para contribuintes de municípios mineiros atingidos por fortes chuvas",
       "updatedAt": "05/03/2026 10h48",
       "url": "https://www.gov.br/receitafederal/pt-br/assuntos/noticias/2026/marco/simples-nacional-prazos-de-tributos-sao-prorrogados-para-contribuintes-de-municipios-mineiros-atingidos-por-fortes-chuvas"
     },
     "simples-noticias": {
       "hash": "109019e5909710747eb69da6881e28b5a0ee3f77eb7047c2ba5d968200bb34d6",
-      "checkedAt": "2026-05-12T12:20:33.979Z",
+      "checkedAt": "2026-05-13T12:25:33.131Z",
       "title": "Simples Nacional",
       "updatedAt": "18/02/2021",
       "url": "https://www8.receita.fazenda.gov.br/SIMPLESNACIONAL/Noticias/TodasNoticias.aspx"
     },
     "mte-fgts-digital": {
-      "hash": "3c6a6d75749beb70567157087dbd2fdb07152472a7eaae0404a4af14fc242a23",
-      "checkedAt": "2026-05-12T12:20:33.979Z",
+      "hash": "130480c6373d15a89304ce27151f6ff53d8d684468f3b336fb6ae5b6543b3ce6",
+      "checkedAt": "2026-05-13T12:25:33.131Z",
       "title": "FGTS Digital",
       "updatedAt": null,
       "url": "https://www.gov.br/trabalho-e-emprego/pt-br/servicos/empregador/fgtsdigital"
     },
     "govbr-mei-das": {
       "hash": "e4515572664067a2d97d29c586f43b6ba2474d7f4e5c74b881cf9c6d6877f4ba",
-      "checkedAt": "2026-05-12T12:20:33.979Z",
+      "checkedAt": "2026-05-13T12:25:33.131Z",
       "title": "Quais impostos devem ser pagos por quem é MEI? Quais são os valores e até quando devem ser pagos?",
       "updatedAt": "02/01/2024 18h02",
       "url": "https://www.gov.br/empresas-e-negocios/pt-br/empreendedor/perguntas-frequentes/pagamento-da-contribuicao-mensal-carne-mensal/quais-impostos-devem-ser-pagos-1"
