@@ -1,5 +1,5 @@
 window.GOVERNMENT_UPDATES = {
-  "checkedAt": "2026-05-26T13:24:46.687Z",
+  "checkedAt": "2026-05-27T13:51:21.023Z",
   "hasChanges": true,
   "changes": [
     {
@@ -13,11 +13,11 @@ window.GOVERNMENT_UPDATES = {
         "prazos"
       ],
       "title": "Agenda Tributária",
-      "updatedAt": "28/04/2026 12h12",
-      "hash": "7bd8bec1b2ed4ded8551e982b3c0c3d2576b0de9ce6440f4f38d8a126cacdc11",
+      "updatedAt": "26/05/2026 22h28",
+      "hash": "b17cb90d58e709a9939a9dae29080ccc92d71138be848a620a85d416b47ae84b",
       "snippet": "Agenda Tributária — Receita Federal Ir para o Conteúdo 1 Ir para a Página Inicial 2 Ir para o menu de Navegação 3 Ir para a Busca 4 Ir para o Mapa do site 5 Atenção! Seu navegador não pode executar javascript. Alguns recursos podem não funcionar corretamente. --\u003E Abrir menu principal de navegação Nome do site --\u003E Receita Federal Termos mais buscados imposto",
       "changeType": "content-changed",
-      "previousCheckedAt": "2026-05-25T13:43:34.702Z",
+      "previousCheckedAt": "2026-05-26T13:24:46.687Z",
       "previousUpdatedAt": "28/04/2026 12h12"
     },
     {
@@ -34,10 +34,10 @@ window.GOVERNMENT_UPDATES = {
       ],
       "title": "Dia 20/05/2026",
       "updatedAt": "27/04/2026 16h58",
-      "hash": "8951587bda19ca6b0d94535434d70f436ad15f7aa67c617f36f86840f5a9e2c7",
+      "hash": "52407d752af6123f2e402707fab2eb0ec6d0a6a1fd70c1c8920f3b438ddf14ad",
       "snippet": "ionar corretamente. --\u003E Abrir menu principal de navegação Nome do site --\u003E Receita Federal Termos mais buscados imposto de renda assinatura inss mei enem Termos mais buscados imposto de renda assinatura inss Serviços Serviços de A a Z Auditorias Fiscais Consultar procedimentos fiscais Responder notificações Obter laudo fiscal Cadastros Cidadão (CPF/CAEPF) Pe",
       "changeType": "content-changed",
-      "previousCheckedAt": "2026-05-25T13:43:34.702Z",
+      "previousCheckedAt": "2026-05-26T13:24:46.687Z",
       "previousUpdatedAt": "27/04/2026 16h58"
     },
     {
@@ -53,10 +53,10 @@ window.GOVERNMENT_UPDATES = {
       ],
       "title": "Dia 25/05/2026",
       "updatedAt": "27/04/2026 16h58",
-      "hash": "6d380af9bacb63f423622d02d9c723a891d5b910914713b31e26d3d734bf728b",
+      "hash": "76c5b7dfdeb9d7335453ca0599530700f856523b85a12520c6770a33a79db0bd",
       "snippet": "Dia 25/05/2026 — Receita Federal Ir para o Conteúdo 1 Ir para a Página Inicial 2 Ir para o menu de Navegação 3 Ir para a Busca 4 Ir para o Mapa do site 5 Atenção! Seu navegador não pode executar javascript. Alguns recursos podem não funcionar corretamente. --\u003E Abrir menu principal de navegação Nome do site --\u003E Receita Federal Termos mais buscados imposto de",
       "changeType": "content-changed",
-      "previousCheckedAt": "2026-05-25T13:43:34.702Z",
+      "previousCheckedAt": "2026-05-26T13:24:46.687Z",
       "previousUpdatedAt": "27/04/2026 16h58"
     },
     {
@@ -73,10 +73,10 @@ window.GOVERNMENT_UPDATES = {
       ],
       "title": "Dia 29/05/2026",
       "updatedAt": "27/04/2026 16h58",
-      "hash": "11adb7ccd0aa2c6a40c2ced84c3efeb5d58d9f444d4415bdfdcd3baa6d596f3b",
+      "hash": "7476b170db25aa2c87222b41e053bc7a11bae67775ec823177371f5d3a0d1392",
       "snippet": "30/04/2026) DARF -- / -- Lei nº 7.713/88 Art. 7º 4600 IRRF Ganhos de capital na alienação de bens e direitos Mês Anterior (30/04/2026) DARF DIRPF Anual / -- Lei nº 7.713/88 Art. 2º 8523 IRRF Ganhos de Capital na Alienação de Bens e Direitos Localizados no Exterior Mês Anterior (30/04/2026) DARF -- / -- Lei nº 7.713/88 Art. 2º 6015 IRRF Ganhos líquidos em ope",
       "changeType": "content-changed",
-      "previousCheckedAt": "2026-05-25T13:43:34.702Z",
+      "previousCheckedAt": "2026-05-26T13:24:46.687Z",
       "previousUpdatedAt": "27/04/2026 16h58"
     },
     {
@@ -93,46 +93,11 @@ window.GOVERNMENT_UPDATES = {
       ],
       "title": "Simples Nacional: prazos de tributos são prorrogados para contribuintes de municípios mineiros atingidos por fortes chuvas",
       "updatedAt": "05/03/2026 10h48",
-      "hash": "a80a7fbcfeca98b232b1455d3c50d049d8c38f779bd15eccb2488e729eb98827",
+      "hash": "4c2c3bb1afc867b1fb17b9a92c0c288b4441f348f5dc8840d65fe6c47353005b",
       "snippet": "Simples Nacional: prazos de tributos são prorrogados para contribuintes de municípios mineiros atingidos por fortes chuvas — Receita Federal Ir para o Conteúdo 1 Ir para a Página Inicial 2 Ir para o menu de Navegação 3 Ir para a Busca 4 Ir para o Mapa do site 5 Atenção! Seu navegador não pode executar javascript. Alguns recursos podem não funcionar corretame",
       "changeType": "content-changed",
-      "previousCheckedAt": "2026-05-25T13:43:34.702Z",
+      "previousCheckedAt": "2026-05-26T13:24:46.687Z",
       "previousUpdatedAt": "05/03/2026 10h48"
-    },
-    {
-      "id": "mte-fgts-digital",
-      "name": "MTE - FGTS Digital",
-      "authority": "Ministerio do Trabalho e Emprego",
-      "url": "https://www.gov.br/trabalho-e-emprego/pt-br/servicos/empregador/fgtsdigital",
-      "affects": [
-        "FGTS Digital",
-        "trabalhista"
-      ],
-      "title": "FGTS Digital",
-      "updatedAt": null,
-      "hash": "fb8905126e9a1808ec34d78f61f20b64b2af872280538cf39e1b62a0d5a34470",
-      "snippet": "FGTS Digital — Ministério do Trabalho e Emprego Ir para o Conteúdo 1 Ir para a Página Inicial 2 Ir para o menu de Navegação 3 Ir para a Busca 4 Ir para o Mapa do site 5 Atenção! Seu navegador não pode executar javascript. Alguns recursos podem não funcionar corretamente. --\u003E Abrir menu principal de navegação Nome do site --\u003E Ministério do Trabalho e Emprego",
-      "changeType": "content-changed",
-      "previousCheckedAt": "2026-05-25T13:43:34.702Z",
-      "previousUpdatedAt": null
-    },
-    {
-      "id": "govbr-mei-das",
-      "name": "Gov.br - MEI DAS Mensal",
-      "authority": "Empresas e Negocios / gov.br",
-      "url": "https://www.gov.br/empresas-e-negocios/pt-br/empreendedor/perguntas-frequentes/pagamento-da-contribuicao-mensal-carne-mensal/quais-impostos-devem-ser-pagos-1",
-      "affects": [
-        "MEI",
-        "DAS-MEI",
-        "SIMEI"
-      ],
-      "title": "Quais impostos devem ser pagos por quem é MEI? Quais são os valores e até quando devem ser pagos?",
-      "updatedAt": "02/01/2024 18h02",
-      "hash": "4e9e3f3c47575f61fda0ba655d7b7ec7a49c21f4e519c3004f798250b95d8a6d",
-      "snippet": "Quais impostos devem ser pagos por quem é MEI? Quais são os valores e até quando devem ser pagos? — Empresas \u0026 Negócios Ir para o Conteúdo 1 Ir para a Página Inicial 2 Ir para o menu de Navegação 3 Ir para a Busca 4 Ir para o Mapa do site 5 Atenção! Seu navegador não pode executar javascript. Alguns recursos podem não funcionar corretamente. --\u003E Abrir menu p",
-      "changeType": "content-changed",
-      "previousCheckedAt": "2026-05-25T13:43:34.702Z",
-      "previousUpdatedAt": "02/01/2024 18h02"
     }
   ],
   "errors": [],
