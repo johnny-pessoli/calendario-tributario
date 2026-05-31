@@ -1,5 +1,5 @@
 window.GOVERNMENT_UPDATES = {
-  "checkedAt": "2026-05-30T11:46:07.899Z",
+  "checkedAt": "2026-05-31T11:51:30.690Z",
   "hasChanges": false,
   "changes": [],
   "errors": [],
