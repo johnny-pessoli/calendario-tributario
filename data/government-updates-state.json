@@ -1,58 +1,58 @@
 {
-  "checkedAt": "2026-07-03T12:20:32.955Z",
+  "checkedAt": "2026-07-04T11:47:35.088Z",
   "sources": {
     "rf-agenda-maio-2026": {
-      "hash": "b1709e125ced1a15d3aabe602a96c711ff77cbd736c526e92547b1aabdb53da5",
-      "checkedAt": "2026-07-03T12:20:32.955Z",
+      "hash": "fa2e2a841e6de6df1e42927b1ca66336d0d006ac5af8f84cac0cfa8c12881166",
+      "checkedAt": "2026-07-04T11:47:35.088Z",
       "title": "Agenda Tributária",
       "updatedAt": "26/05/2026 22h28",
       "url": "https://www.gov.br/receitafederal/pt-br/assuntos/agenda-tributaria/2026/maio"
     },
     "rf-dia-20-maio-2026": {
-      "hash": "d60e39c71207585331963f39afec0194af9814933b38590098f779eed2aefa74",
-      "checkedAt": "2026-07-03T12:20:32.955Z",
+      "hash": "28bc28a52b978383a63800acf4778c7d74eba976a558dff1153dd67b0d4b8808",
+      "checkedAt": "2026-07-04T11:47:35.088Z",
       "title": "Dia 20/05/2026",
       "updatedAt": "27/04/2026 16h58",
       "url": "https://www.gov.br/receitafederal/pt-br/assuntos/agenda-tributaria/2026/maio/dia-20-05-2026"
     },
     "rf-dia-25-maio-2026": {
-      "hash": "8ebca0a73ad1baff79549a703f337e7b02a41ab46df012f170bbb0637511224d",
-      "checkedAt": "2026-07-03T12:20:32.955Z",
+      "hash": "7fa0c1ffa94d9796f4301135022a0756d5395c0cb6a5c092914b7efdd1f854cf",
+      "checkedAt": "2026-07-04T11:47:35.088Z",
       "title": "Dia 25/05/2026",
       "updatedAt": "27/04/2026 16h58",
       "url": "https://www.gov.br/receitafederal/pt-br/assuntos/agenda-tributaria/2026/maio/dia-25-05-2026"
     },
     "rf-dia-29-maio-2026": {
-      "hash": "97a0d192617d97832abfba9be9651350afbf0478b8ba995853449e2284e7cc5a",
-      "checkedAt": "2026-07-03T12:20:32.955Z",
+      "hash": "ccc878c2e87a20e7732942624bdf4fc4ba98eb90726cd357817739c990ccf3a6",
+      "checkedAt": "2026-07-04T11:47:35.088Z",
       "title": "Dia 29/05/2026",
       "updatedAt": "27/04/2026 16h58",
       "url": "https://www.gov.br/receitafederal/pt-br/assuntos/agenda-tributaria/2026/maio/dia-29-05-2026"
     },
     "rf-simples-prorrogacao-mg-2026": {
-      "hash": "4838328ff1155002a50d4631d1be1f5c8c8b1a8dc954e8c7f1b6af9e024ac151",
-      "checkedAt": "2026-07-03T12:20:32.955Z",
-      "title": "Simples Nacional: prazos de tributos são prorrogados para contribuintes de municípios mineiros atingidos por fortes chuvas",
-      "updatedAt": "05/03/2026 10h48",
+      "hash": "8f697dad2246fb07b465d3cccfe52b33110508f26a209b8652eca8fcc7027b92",
+      "checkedAt": "2026-07-04T11:47:35.088Z",
+      "title": "Conteúdo Restrito",
+      "updatedAt": null,
       "url": "https://www.gov.br/receitafederal/pt-br/assuntos/noticias/2026/marco/simples-nacional-prazos-de-tributos-sao-prorrogados-para-contribuintes-de-municipios-mineiros-atingidos-por-fortes-chuvas"
     },
     "simples-noticias": {
       "hash": "109019e5909710747eb69da6881e28b5a0ee3f77eb7047c2ba5d968200bb34d6",
-      "checkedAt": "2026-07-03T12:20:32.955Z",
+      "checkedAt": "2026-07-04T11:47:35.088Z",
       "title": "Simples Nacional",
       "updatedAt": "18/02/2021",
       "url": "https://www8.receita.fazenda.gov.br/SIMPLESNACIONAL/Noticias/TodasNoticias.aspx"
     },
     "mte-fgts-digital": {
-      "hash": "09ad298cf4690d9666655890dcc207e731709ce4ca688783d6ac28ccf0f89e71",
-      "checkedAt": "2026-07-03T12:20:32.955Z",
+      "hash": "8ae506d16e814bb101f86e0318e84ac305a364845c72f140ff01d260af8a5d89",
+      "checkedAt": "2026-07-04T11:47:35.088Z",
       "title": "FGTS Digital",
       "updatedAt": null,
       "url": "https://www.gov.br/trabalho-e-emprego/pt-br/servicos/empregador/fgtsdigital"
     },
     "govbr-mei-das": {
       "hash": "ac7e3d3a4f5a5aa965c0b4d22e973df744491e0f496cbe29b18db0210fbece2b",
-      "checkedAt": "2026-07-03T12:20:32.955Z",
+      "checkedAt": "2026-07-04T11:47:35.088Z",
       "title": "Quais impostos devem ser pagos por quem é MEI? Quais são os valores e até quando devem ser pagos?",
       "updatedAt": "02/01/2024 18h02",
       "url": "https://www.gov.br/empresas-e-negocios/pt-br/empreendedor/perguntas-frequentes/pagamento-da-contribuicao-mensal-carne-mensal/quais-impostos-devem-ser-pagos-1"
