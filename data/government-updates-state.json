@@ -1,30 +1,30 @@
 {
-  "checkedAt": "2026-07-08T11:58:25.306Z",
+  "checkedAt": "2026-07-10T12:37:46.514Z",
   "sources": {
     "rf-agenda-maio-2026": {
-      "hash": "9e8e5ffa35903a780a289d95ed846483b9d36b450570e7abbe977c83e80f4d39",
-      "checkedAt": "2026-07-08T11:58:25.306Z",
+      "hash": "66318a89f292ca558c3fb81c3a4fbf18f1699600ff854c762a77d8a5c3f5f93c",
+      "checkedAt": "2026-07-10T12:37:46.514Z",
       "title": "Agenda Tributária",
       "updatedAt": "26/05/2026 22h28",
       "url": "https://www.gov.br/receitafederal/pt-br/assuntos/agenda-tributaria/2026/maio"
     },
     "rf-dia-20-maio-2026": {
-      "hash": "dde4e818702882e81b98567bb67d69c6747fb87b3400a187e76c898be1c00614",
-      "checkedAt": "2026-07-08T11:58:25.306Z",
+      "hash": "dace2575b1562bb5fd649ba25a16954596fb8aff80d9937e956814dd81e5a04c",
+      "checkedAt": "2026-07-10T12:37:46.514Z",
       "title": "Dia 20/05/2026",
       "updatedAt": "27/04/2026 16h58",
       "url": "https://www.gov.br/receitafederal/pt-br/assuntos/agenda-tributaria/2026/maio/dia-20-05-2026"
     },
     "rf-dia-25-maio-2026": {
-      "hash": "0e6c58389b60baf645d0d134759cc470df0636a919609ff040c4d8b639818d51",
-      "checkedAt": "2026-07-08T11:58:25.306Z",
+      "hash": "f27e7d36912fb33b1d41e9250ccc0f543ec756e9123b856f1bdb643ff0b27574",
+      "checkedAt": "2026-07-10T12:37:46.514Z",
       "title": "Dia 25/05/2026",
       "updatedAt": "27/04/2026 16h58",
       "url": "https://www.gov.br/receitafederal/pt-br/assuntos/agenda-tributaria/2026/maio/dia-25-05-2026"
     },
     "rf-dia-29-maio-2026": {
-      "hash": "6ef83062da3429751b19bf89866b77742cc23c79245c7ee7bbbb34b8731f13a6",
-      "checkedAt": "2026-07-08T11:58:25.306Z",
+      "hash": "6bfbceec1a17bb755c7e8c50eda7068406d5032cf4ff20dc1d74925fcf6651f3",
+      "checkedAt": "2026-07-10T12:37:46.514Z",
       "title": "Dia 29/05/2026",
       "updatedAt": "27/04/2026 16h58",
       "url": "https://www.gov.br/receitafederal/pt-br/assuntos/agenda-tributaria/2026/maio/dia-29-05-2026"
@@ -38,21 +38,21 @@
     },
     "simples-noticias": {
       "hash": "109019e5909710747eb69da6881e28b5a0ee3f77eb7047c2ba5d968200bb34d6",
-      "checkedAt": "2026-07-08T11:58:25.306Z",
+      "checkedAt": "2026-07-10T12:37:46.514Z",
       "title": "Simples Nacional",
       "updatedAt": "18/02/2021",
       "url": "https://www8.receita.fazenda.gov.br/SIMPLESNACIONAL/Noticias/TodasNoticias.aspx"
     },
     "mte-fgts-digital": {
-      "hash": "192ed59c00b7d90bb916255763a3dc1e5b7ee59f8d8036c0a18a9b949948e3fd",
-      "checkedAt": "2026-07-08T11:58:25.306Z",
+      "hash": "e0b626bda033286f4c573367e8e29031b5c4ec1d3bd9c60c8f85ebb8671a1949",
+      "checkedAt": "2026-07-10T12:37:46.514Z",
       "title": "FGTS Digital",
       "updatedAt": null,
       "url": "https://www.gov.br/trabalho-e-emprego/pt-br/servicos/empregador/fgtsdigital"
     },
     "govbr-mei-das": {
       "hash": "4806f66261677f55bc0b6b705d6cf43f14c95522712037a3b37006f080a98d92",
-      "checkedAt": "2026-07-08T11:58:25.306Z",
+      "checkedAt": "2026-07-10T12:37:46.514Z",
       "title": "Quais impostos devem ser pagos por quem é MEI? Quais são os valores e até quando devem ser pagos?",
       "updatedAt": "02/01/2024 18h02",
       "url": "https://www.gov.br/empresas-e-negocios/pt-br/empreendedor/perguntas-frequentes/pagamento-da-contribuicao-mensal-carne-mensal/quais-impostos-devem-ser-pagos-1"
