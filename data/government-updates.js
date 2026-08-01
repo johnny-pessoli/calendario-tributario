@@ -1,22 +1,25 @@
 window.GOVERNMENT_UPDATES = {
-  "checkedAt": "2026-07-30T12:05:52.630Z",
+  "checkedAt": "2026-08-01T11:35:53.649Z",
   "hasChanges": true,
   "changes": [
     {
-      "id": "mte-fgts-digital",
-      "name": "MTE - FGTS Digital",
-      "authority": "Ministerio do Trabalho e Emprego",
-      "url": "https://www.gov.br/trabalho-e-emprego/pt-br/servicos/empregador/fgtsdigital",
+      "id": "rf-simples-prorrogacao-mg-2026",
+      "name": "Receita Federal - Prorrogacao Simples Nacional MG 2026",
+      "authority": "Receita Federal",
+      "url": "https://www.gov.br/receitafederal/pt-br/assuntos/noticias/2026/marco/simples-nacional-prazos-de-tributos-sao-prorrogados-para-contribuintes-de-municipios-mineiros-atingidos-por-fortes-chuvas",
       "affects": [
-        "FGTS Digital",
-        "trabalhista"
+        "Simples Nacional",
+        "MEI",
+        "SIMEI",
+        "PGDAS-D",
+        "prorrogacao"
       ],
-      "title": "FGTS Digital",
+      "title": "Conteúdo Restrito",
       "updatedAt": null,
-      "hash": "3fa2f63f51d83c7573fef2e3e35a7725ebeec27e60b2daa2162db61dc9e2009b",
-      "snippet": "FGTS Digital — Ministério do Trabalho e Emprego Ir para o Conteúdo 1 Ir para a Página Inicial 2 Ir para o menu de Navegação 3 Ir para a Busca 4 Ir para o Mapa do site 5 Atenção! Seu navegador não pode executar javascript. Alguns recursos podem não funcionar corretamente. --\u003E Abrir menu principal de navegação Nome do site --\u003E Ministério do Trabalho e Emprego",
+      "hash": "d61e81457efc0aca30a9c535a7d64e619b66fff52e4fa12c29342613545a0429",
+      "snippet": "ionar corretamente. --\u003E Abrir menu principal de navegação Nome do site --\u003E Receita Federal Termos mais buscados imposto de renda assinatura mei inss enem Termos mais buscados imposto de renda assinatura mei Curso Reforma Tributária do Consumo Estatísticas Travellers Guide Guia do Viajante COP30 (versão desktop) Guia do Viajante COP30 (versão mobile) GOV.BR S",
       "changeType": "content-changed",
-      "previousCheckedAt": "2026-07-29T12:22:55.228Z",
+      "previousCheckedAt": "2026-07-30T12:05:52.630Z",
       "previousUpdatedAt": null
     }
   ],
