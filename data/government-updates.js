@@ -1,5 +1,5 @@
 window.GOVERNMENT_UPDATES = {
-  "checkedAt": "2026-09-11T14:28:20.892Z",
+  "checkedAt": "2026-09-12T13:37:39.441Z",
   "hasChanges": true,
   "changes": [
     {
@@ -14,10 +14,10 @@ window.GOVERNMENT_UPDATES = {
       ],
       "title": "Agenda Tributária",
       "updatedAt": "26/05/2026 22h28",
-      "hash": "31b4f301e49be340f170ba7b1be89657a54805a1e85c1554cdbd41a494fa0751",
+      "hash": "47643fc163eb7f78f4514fc584f4ba9a2994413d54635fe8eb7f2c026dc02eb5",
       "snippet": "Agenda Tributária — Receita Federal Ir para o Conteúdo 1 Ir para a Página Inicial 2 Ir para o menu de Navegação 3 Ir para a Busca 4 Ir para o Mapa do site 5 Atenção! Seu navegador não pode executar javascript. Alguns recursos podem não funcionar corretamente. --\u003E Abrir menu principal de navegação Nome do site --\u003E Receita Federal Termos mais buscados imposto",
       "changeType": "content-changed",
-      "previousCheckedAt": "2026-09-10T14:29:09.541Z",
+      "previousCheckedAt": "2026-09-11T14:28:20.892Z",
       "previousUpdatedAt": "26/05/2026 22h28"
     },
     {
@@ -34,10 +34,10 @@ window.GOVERNMENT_UPDATES = {
       ],
       "title": "Dia 20/05/2026",
       "updatedAt": "27/04/2026 16h58",
-      "hash": "1dd483f06747250951cb76366ddc11df19a2c91d2d40720946ba5a5b38e78610",
+      "hash": "ff6f822132f89eb575ddd2b00d2ab05ddd00bf31148c519dbfcc7ee8b38094cc",
       "snippet": "r corretamente. --\u003E Abrir menu principal de navegação Nome do site --\u003E Receita Federal Termos mais buscados imposto de renda assinatura mei inss Desenrola Brasil Termos mais buscados imposto de renda assinatura mei Assuntos Notícias Todas as notícias Arrecadação e Cobrança Cidadania Fiscal Combate ao contrabando Combate à corrupção Combate à sonegação Instit",
       "changeType": "content-changed",
-      "previousCheckedAt": "2026-09-10T14:29:09.541Z",
+      "previousCheckedAt": "2026-09-11T14:28:20.892Z",
       "previousUpdatedAt": "27/04/2026 16h58"
     },
     {
@@ -53,29 +53,51 @@ window.GOVERNMENT_UPDATES = {
       ],
       "title": "Dia 25/05/2026",
       "updatedAt": "27/04/2026 16h58",
-      "hash": "66c278f4ccddec2145843da12ec8eab690c4b85e788abfd9f3ba1f14cdf8cde0",
+      "hash": "d5eb90ed6658439e3e3f2f2324d3fbe914d6184993fb9cd52e1b4b305c20a109",
       "snippet": "Dia 25/05/2026 — Receita Federal Ir para o Conteúdo 1 Ir para a Página Inicial 2 Ir para o menu de Navegação 3 Ir para a Busca 4 Ir para o Mapa do site 5 Atenção! Seu navegador não pode executar javascript. Alguns recursos podem não funcionar corretamente. --\u003E Abrir menu principal de navegação Nome do site --\u003E Receita Federal Termos mais buscados imposto de",
       "changeType": "content-changed",
-      "previousCheckedAt": "2026-09-10T14:29:09.541Z",
+      "previousCheckedAt": "2026-09-11T14:28:20.892Z",
       "previousUpdatedAt": "27/04/2026 16h58"
     },
     {
-      "id": "govbr-mei-das",
-      "name": "Gov.br - MEI DAS Mensal",
-      "authority": "Empresas e Negocios / gov.br",
-      "url": "https://www.gov.br/empresas-e-negocios/pt-br/empreendedor/perguntas-frequentes/pagamento-da-contribuicao-mensal-carne-mensal/quais-impostos-devem-ser-pagos-1",
+      "id": "rf-dia-29-maio-2026",
+      "name": "Receita Federal - Vencimentos 29/05/2026",
+      "authority": "Receita Federal",
+      "url": "https://www.gov.br/receitafederal/pt-br/assuntos/agenda-tributaria/2026/maio/dia-29-05-2026",
       "affects": [
-        "MEI",
-        "DAS-MEI",
-        "SIMEI"
+        "IRPJ",
+        "CSLL",
+        "Lucro Real",
+        "Lucro Presumido",
+        "DIRPF"
       ],
-      "title": "Quais impostos devem ser pagos por quem é MEI? Quais são os valores e até quando devem ser pagos?",
-      "updatedAt": "02/01/2024 18h02",
-      "hash": "1a8aea2940e474401c16f5b8bae8872c6077e25df0b3b1608418208ffb293fba",
-      "snippet": "Quais impostos devem ser pagos por quem é MEI? Quais são os valores e até quando devem ser pagos? — Empresas \u0026 Negócios Ir para o Conteúdo 1 Ir para a Página Inicial 2 Ir para o menu de Navegação 3 Ir para a Busca 4 Ir para o Mapa do site 5 Atenção! Seu navegador não pode executar javascript. Alguns recursos podem não funcionar corretamente. --\u003E Abrir menu p",
+      "title": "Dia 29/05/2026",
+      "updatedAt": "27/04/2026 16h58",
+      "hash": "b721a4e7a08eab8ecd0cd272778b1c74840a66ae06f379789f4799c6bd3a863e",
+      "snippet": "30/04/2026) DARF -- / -- Lei nº 7.713/88 Art. 7º 4600 IRRF Ganhos de capital na alienação de bens e direitos Mês Anterior (30/04/2026) DARF DIRPF Anual / -- Lei nº 7.713/88 Art. 2º 8523 IRRF Ganhos de Capital na Alienação de Bens e Direitos Localizados no Exterior Mês Anterior (30/04/2026) DARF -- / -- Lei nº 7.713/88 Art. 2º 6015 IRRF Ganhos líquidos em ope",
       "changeType": "content-changed",
-      "previousCheckedAt": "2026-09-10T14:29:09.541Z",
-      "previousUpdatedAt": "02/01/2024 18h02"
+      "previousCheckedAt": "2026-09-11T14:28:20.892Z",
+      "previousUpdatedAt": "27/04/2026 16h58"
+    },
+    {
+      "id": "rf-simples-prorrogacao-mg-2026",
+      "name": "Receita Federal - Prorrogacao Simples Nacional MG 2026",
+      "authority": "Receita Federal",
+      "url": "https://www.gov.br/receitafederal/pt-br/assuntos/noticias/2026/marco/simples-nacional-prazos-de-tributos-sao-prorrogados-para-contribuintes-de-municipios-mineiros-atingidos-por-fortes-chuvas",
+      "affects": [
+        "Simples Nacional",
+        "MEI",
+        "SIMEI",
+        "PGDAS-D",
+        "prorrogacao"
+      ],
+      "title": "Conteúdo Restrito",
+      "updatedAt": null,
+      "hash": "334b78af844a8da78694ce3d6f79316344161b7ea7d306d092e3ec2b273d1225",
+      "snippet": "ionar corretamente. --\u003E Abrir menu principal de navegação Nome do site --\u003E Receita Federal Termos mais buscados imposto de renda assinatura mei inss Desenrola Brasil Termos mais buscados imposto de renda assinatura mei Curso Reforma Tributária do Consumo Estatísticas Travellers Guide Guia do Viajante COP30 (versão desktop) Guia do Viajante COP30 (versão mobi",
+      "changeType": "content-changed",
+      "previousCheckedAt": "2026-09-11T14:28:20.892Z",
+      "previousUpdatedAt": null
     }
   ],
   "errors": [],
