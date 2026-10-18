@@ -1,25 +1,7 @@
 window.GOVERNMENT_UPDATES = {
-  "checkedAt": "2026-10-17T13:46:34.863Z",
-  "hasChanges": true,
-  "changes": [
-    {
-      "id": "mte-fgts-digital",
-      "name": "MTE - FGTS Digital",
-      "authority": "Ministerio do Trabalho e Emprego",
-      "url": "https://www.gov.br/trabalho-e-emprego/pt-br/servicos/empregador/fgtsdigital",
-      "affects": [
-        "FGTS Digital",
-        "trabalhista"
-      ],
-      "title": "FGTS Digital",
-      "updatedAt": null,
-      "hash": "14e7bfb74e52547897791f21189351d7e23c72e7c807382cc559afa529ef577d",
-      "snippet": "FGTS Digital — Ministério do Trabalho e Emprego Ir para o Conteúdo 1 Ir para a Página Inicial 2 Ir para o menu de Navegação 3 Ir para a Busca 4 Ir para o Mapa do site 5 Atenção! Seu navegador não pode executar javascript. Alguns recursos podem não funcionar corretamente. --\u003E Abrir menu principal de navegação Nome do site --\u003E Ministério do Trabalho e Emprego",
-      "changeType": "content-changed",
-      "previousCheckedAt": "2026-10-16T14:54:03.929Z",
-      "previousUpdatedAt": null
-    }
-  ],
+  "checkedAt": "2026-10-18T14:02:30.387Z",
+  "hasChanges": false,
+  "changes": [],
   "errors": [
     {
       "id": "govbr-mei-das",
@@ -29,5 +11,5 @@ window.GOVERNMENT_UPDATES = {
       "message": "HTTP 404"
     }
   ],
-  "message": "Fontes oficiais tiveram alteracoes desde a ultima verificacao. Revise os links antes de atualizar prazos."
+  "message": "Nenhuma mudanca oficial detectada desde a ultima verificacao."
 };
