@@ -1,5 +1,5 @@
 window.GOVERNMENT_UPDATES = {
-  "checkedAt": "2026-11-09T20:48:24.423Z",
+  "checkedAt": "2026-11-10T17:55:05.494Z",
   "hasChanges": true,
   "changes": [
     {
@@ -14,10 +14,10 @@ window.GOVERNMENT_UPDATES = {
       ],
       "title": "Agenda Tributária",
       "updatedAt": "26/05/2026 22h28",
-      "hash": "588348dbb408e4ffcae4b1e439e435ae210e34a66db70d5060674815c062d5d4",
+      "hash": "e0e736d6321410e276c5c55bf8411b74f42d1fad91bf43ea9d102b488021d475",
       "snippet": "Agenda Tributária — Receita Federal Ir para o Conteúdo 1 Ir para a Página Inicial 2 Ir para o menu de Navegação 3 Ir para a Busca 4 Ir para o Mapa do site 5 Atenção! Seu navegador não pode executar javascript. Alguns recursos podem não funcionar corretamente. --\u003E Abrir menu principal de navegação Nome do site --\u003E Receita Federal Termos mais buscados Desenrol",
       "changeType": "content-changed",
-      "previousCheckedAt": "2026-11-08T16:42:26.799Z",
+      "previousCheckedAt": "2026-11-09T20:48:24.423Z",
       "previousUpdatedAt": "26/05/2026 22h28"
     },
     {
@@ -34,10 +34,10 @@ window.GOVERNMENT_UPDATES = {
       ],
       "title": "Dia 20/05/2026",
       "updatedAt": "27/04/2026 16h58",
-      "hash": "ff494a654474c2840482d150262646c74dcdcd098869250d49a2d8cdfe80006c",
+      "hash": "d08af5d970f72aae4c4713384e2787260f0bfcd8762bd2261ca0c4b63e948cc4",
       "snippet": "a Grupo de Tributo Descrição Período de Apuração Documento Arrecadação Categoria da Declaração / Origem Escrituração Fundamentação Legal -- Simples Doméstico Regime unificado de pagamento de tributos, de contribuições e dos demais encargos do empregador doméstico Mês Anterior (04/2026) DAE DCTFWeb Geral Mensal / eSocial 4574 PIS/Pasep Entidades financeiras e",
       "changeType": "content-changed",
-      "previousCheckedAt": "2026-11-08T16:42:26.799Z",
+      "previousCheckedAt": "2026-11-09T20:48:24.423Z",
       "previousUpdatedAt": "27/04/2026 16h58"
     },
     {
@@ -53,10 +53,10 @@ window.GOVERNMENT_UPDATES = {
       ],
       "title": "Dia 25/05/2026",
       "updatedAt": "27/04/2026 16h58",
-      "hash": "df75c8e5947f27f541c32a477097170563aa65fd7b4ac8a91d08501f053d13e1",
+      "hash": "16b201219e6c741168cd302ce8c3142fd04b213081bbc22241e910e5ea2b60ff",
       "snippet": "Dia 25/05/2026 — Receita Federal Ir para o Conteúdo 1 Ir para a Página Inicial 2 Ir para o menu de Navegação 3 Ir para a Busca 4 Ir para o Mapa do site 5 Atenção! Seu navegador não pode executar javascript. Alguns recursos podem não funcionar corretamente. --\u003E Abrir menu principal de navegação Nome do site --\u003E Receita Federal Termos mais buscados Desenrola B",
       "changeType": "content-changed",
-      "previousCheckedAt": "2026-11-08T16:42:26.799Z",
+      "previousCheckedAt": "2026-11-09T20:48:24.423Z",
       "previousUpdatedAt": "27/04/2026 16h58"
     },
     {
@@ -73,10 +73,10 @@ window.GOVERNMENT_UPDATES = {
       ],
       "title": "Dia 29/05/2026",
       "updatedAt": "27/04/2026 16h58",
-      "hash": "3c906250736827a39f2c732369380915bde44188d44e0dd06dab8283dc389465",
+      "hash": "fc1d859fea3ae4f4cce2b7e2a2ebbbb11b491cd329e2d1351f4823755d844c79",
       "snippet": "30/04/2026) DARF -- / -- Lei nº 7.713/88 Art. 7º 4600 IRRF Ganhos de capital na alienação de bens e direitos Mês Anterior (30/04/2026) DARF DIRPF Anual / -- Lei nº 7.713/88 Art. 2º 8523 IRRF Ganhos de Capital na Alienação de Bens e Direitos Localizados no Exterior Mês Anterior (30/04/2026) DARF -- / -- Lei nº 7.713/88 Art. 2º 6015 IRRF Ganhos líquidos em ope",
       "changeType": "content-changed",
-      "previousCheckedAt": "2026-11-08T16:42:26.799Z",
+      "previousCheckedAt": "2026-11-09T20:48:24.423Z",
       "previousUpdatedAt": "27/04/2026 16h58"
     },
     {
@@ -93,11 +93,28 @@ window.GOVERNMENT_UPDATES = {
       ],
       "title": "Simples Nacional: prazos de tributos são prorrogados para contribuintes de municípios mineiros atingidos por fortes chuvas",
       "updatedAt": "28/10/2026 10h15",
-      "hash": "de0bea74c47b8d4fa300700f66346c3d357bc50eaa4f37d8710c6f9d58f1160f",
+      "hash": "b4f67db74ed764e841fac8fb7e77b98619aa7ff7ba14d7b82fa4e0482cf8ceb1",
       "snippet": "Simples Nacional: prazos de tributos são prorrogados para contribuintes de municípios mineiros atingidos por fortes chuvas — Receita Federal Ir para o Conteúdo 1 Ir para a Página Inicial 2 Ir para o menu de Navegação 3 Ir para a Busca 4 Ir para o Mapa do site 5 Atenção! Seu navegador não pode executar javascript. Alguns recursos podem não funcionar corretame",
       "changeType": "content-changed",
-      "previousCheckedAt": "2026-11-08T16:42:26.799Z",
+      "previousCheckedAt": "2026-11-09T20:48:24.423Z",
       "previousUpdatedAt": "28/10/2026 10h15"
+    },
+    {
+      "id": "mte-fgts-digital",
+      "name": "MTE - FGTS Digital",
+      "authority": "Ministerio do Trabalho e Emprego",
+      "url": "https://www.gov.br/trabalho-e-emprego/pt-br/servicos/empregador/fgtsdigital",
+      "affects": [
+        "FGTS Digital",
+        "trabalhista"
+      ],
+      "title": "FGTS Digital",
+      "updatedAt": null,
+      "hash": "ccd071845ca684ad539596e2ab2566757cdb59ab8f637fc386a25fddc5a4eaaa",
+      "snippet": "FGTS Digital — Ministério do Trabalho e Emprego Ir para o Conteúdo 1 Ir para a Página Inicial 2 Ir para o menu de Navegação 3 Ir para a Busca 4 Ir para o Mapa do site 5 Atenção! Seu navegador não pode executar javascript. Alguns recursos podem não funcionar corretamente. --\u003E Abrir menu principal de navegação Nome do site --\u003E Ministério do Trabalho e Emprego",
+      "changeType": "content-changed",
+      "previousCheckedAt": "2026-11-09T20:48:24.423Z",
+      "previousUpdatedAt": null
     }
   ],
   "errors": [
