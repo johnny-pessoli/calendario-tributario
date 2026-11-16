@@ -1,51 +1,51 @@
 {
-  "checkedAt": "2026-11-15T17:14:25.096Z",
+  "checkedAt": "2026-11-16T20:31:36.959Z",
   "sources": {
     "rf-agenda-maio-2026": {
-      "hash": "17b5148807a06dcadd9a3470d044a7755dd18ab677c7a71d9f43f38027be3111",
-      "checkedAt": "2026-11-15T17:14:25.096Z",
+      "hash": "0b0d4b8ebaa9cb1d040c581350fc30fe6d7cd1ae63a1cf2c10093ce94f5d7ab3",
+      "checkedAt": "2026-11-16T20:31:36.959Z",
       "title": "Agenda Tributária",
       "updatedAt": "26/05/2026 22h28",
       "url": "https://www.gov.br/receitafederal/pt-br/assuntos/agenda-tributaria/2026/maio"
     },
     "rf-dia-20-maio-2026": {
-      "hash": "669fd8020661a7c836958636b820ba5b1dad7fcb4ef6e3900b56273bf72d52ad",
-      "checkedAt": "2026-11-15T17:14:25.096Z",
+      "hash": "6fa9a7ecad7a99c454553da82cfdbe851382a9569817eed7ffcd175003ce670d",
+      "checkedAt": "2026-11-16T20:31:36.959Z",
       "title": "Dia 20/05/2026",
       "updatedAt": "27/04/2026 16h58",
       "url": "https://www.gov.br/receitafederal/pt-br/assuntos/agenda-tributaria/2026/maio/dia-20-05-2026"
     },
     "rf-dia-25-maio-2026": {
-      "hash": "da2454e85c69d070c8bfab8e8ea97148fea1dc4c818bec682e45aaff3a194d33",
-      "checkedAt": "2026-11-15T17:14:25.096Z",
+      "hash": "170a5067b26495214af317f7f9a9d503287f039433e190b5350d3d34c78ba525",
+      "checkedAt": "2026-11-16T20:31:36.959Z",
       "title": "Dia 25/05/2026",
       "updatedAt": "27/04/2026 16h58",
       "url": "https://www.gov.br/receitafederal/pt-br/assuntos/agenda-tributaria/2026/maio/dia-25-05-2026"
     },
     "rf-dia-29-maio-2026": {
-      "hash": "563a5f9486d732a6578b5c244b9ffebe72efeeeb4ef495081b7babf5ce361469",
-      "checkedAt": "2026-11-15T17:14:25.096Z",
+      "hash": "63383fc34a9c691b5ec1bc4a0badd4810117ba5f860558df37165dbd6d329e6a",
+      "checkedAt": "2026-11-16T20:31:36.959Z",
       "title": "Dia 29/05/2026",
       "updatedAt": "27/04/2026 16h58",
       "url": "https://www.gov.br/receitafederal/pt-br/assuntos/agenda-tributaria/2026/maio/dia-29-05-2026"
     },
     "rf-simples-prorrogacao-mg-2026": {
-      "hash": "73f04cab7b5cc73ab2082655fb792620730bd0d81329710349374f7abe64ac13",
-      "checkedAt": "2026-11-15T17:14:25.096Z",
+      "hash": "cd8bd1dd23addee5d1b21c81acb80451a556995a58535863fd3e4d651c01493b",
+      "checkedAt": "2026-11-16T20:31:36.959Z",
       "title": "Simples Nacional: prazos de tributos são prorrogados para contribuintes de municípios mineiros atingidos por fortes chuvas",
       "updatedAt": "28/10/2026 10h15",
       "url": "https://www.gov.br/receitafederal/pt-br/assuntos/noticias/2026/marco/simples-nacional-prazos-de-tributos-sao-prorrogados-para-contribuintes-de-municipios-mineiros-atingidos-por-fortes-chuvas"
     },
     "simples-noticias": {
       "hash": "b351def23d7462a6b298a17a341ec4b27b9058c85eec59c040b1f7fdc9612ac8",
-      "checkedAt": "2026-11-15T17:14:25.096Z",
+      "checkedAt": "2026-11-16T20:31:36.959Z",
       "title": "Simples Nacional",
       "updatedAt": "18/02/2021",
       "url": "https://www8.receita.fazenda.gov.br/SIMPLESNACIONAL/Noticias/TodasNoticias.aspx"
     },
     "mte-fgts-digital": {
       "hash": "ccd071845ca684ad539596e2ab2566757cdb59ab8f637fc386a25fddc5a4eaaa",
-      "checkedAt": "2026-11-15T17:14:25.096Z",
+      "checkedAt": "2026-11-16T20:31:36.959Z",
       "title": "FGTS Digital",
       "updatedAt": null,
       "url": "https://www.gov.br/trabalho-e-emprego/pt-br/servicos/empregador/fgtsdigital"
