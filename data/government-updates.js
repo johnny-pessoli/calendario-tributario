@@ -1,5 +1,5 @@
 window.GOVERNMENT_UPDATES = {
-  "checkedAt": "2026-11-16T20:31:36.959Z",
+  "checkedAt": "2026-11-17T19:12:30.821Z",
   "hasChanges": true,
   "changes": [
     {
@@ -14,90 +14,28 @@ window.GOVERNMENT_UPDATES = {
       ],
       "title": "Agenda Tributária",
       "updatedAt": "26/05/2026 22h28",
-      "hash": "0b0d4b8ebaa9cb1d040c581350fc30fe6d7cd1ae63a1cf2c10093ce94f5d7ab3",
+      "hash": "28b3ad8dec7f663251106f9ad3c7669c8148cb92779d1624d421c0c27a10e36b",
       "snippet": "Agenda Tributária — Receita Federal Ir para o Conteúdo 1 Ir para a Página Inicial 2 Ir para o menu de Navegação 3 Ir para a Busca 4 Ir para o Mapa do site 5 Atenção! Seu navegador não pode executar javascript. Alguns recursos podem não funcionar corretamente. --\u003E Abrir menu principal de navegação Nome do site --\u003E Receita Federal Termos mais buscados Desenrol",
       "changeType": "content-changed",
-      "previousCheckedAt": "2026-11-15T17:14:25.096Z",
+      "previousCheckedAt": "2026-11-16T20:31:36.959Z",
       "previousUpdatedAt": "26/05/2026 22h28"
     },
     {
-      "id": "rf-dia-20-maio-2026",
-      "name": "Receita Federal - Vencimentos 20/05/2026",
-      "authority": "Receita Federal",
-      "url": "https://www.gov.br/receitafederal/pt-br/assuntos/agenda-tributaria/2026/maio/dia-20-05-2026",
+      "id": "mte-fgts-digital",
+      "name": "MTE - FGTS Digital",
+      "authority": "Ministerio do Trabalho e Emprego",
+      "url": "https://www.gov.br/trabalho-e-emprego/pt-br/servicos/empregador/fgtsdigital",
       "affects": [
-        "DCTFWeb",
-        "PGDAS-D",
-        "IRRF",
-        "INSS",
-        "Simples Domestico"
+        "FGTS Digital",
+        "trabalhista"
       ],
-      "title": "Dia 20/05/2026",
-      "updatedAt": "27/04/2026 16h58",
-      "hash": "6fa9a7ecad7a99c454553da82cfdbe851382a9569817eed7ffcd175003ce670d",
-      "snippet": "a Grupo de Tributo Descrição Período de Apuração Documento Arrecadação Categoria da Declaração / Origem Escrituração Fundamentação Legal -- Simples Doméstico Regime unificado de pagamento de tributos, de contribuições e dos demais encargos do empregador doméstico Mês Anterior (04/2026) DAE DCTFWeb Geral Mensal / eSocial 4574 PIS/Pasep Entidades financeiras e",
+      "title": "FGTS Digital",
+      "updatedAt": null,
+      "hash": "012ba624420232dbc1b85e333ffafb97b49affa0efa90e16ed784cf38b70ede8",
+      "snippet": "FGTS Digital — Ministério do Trabalho e Emprego Ir para o Conteúdo 1 Ir para a Página Inicial 2 Ir para o menu de Navegação 3 Ir para a Busca 4 Ir para o Mapa do site 5 Atenção! Seu navegador não pode executar javascript. Alguns recursos podem não funcionar corretamente. --\u003E Abrir menu principal de navegação Nome do site --\u003E Ministério do Trabalho e Emprego",
       "changeType": "content-changed",
-      "previousCheckedAt": "2026-11-15T17:14:25.096Z",
-      "previousUpdatedAt": "27/04/2026 16h58"
-    },
-    {
-      "id": "rf-dia-25-maio-2026",
-      "name": "Receita Federal - Vencimentos 25/05/2026",
-      "authority": "Receita Federal",
-      "url": "https://www.gov.br/receitafederal/pt-br/assuntos/agenda-tributaria/2026/maio/dia-25-05-2026",
-      "affects": [
-        "PIS",
-        "COFINS",
-        "IPI",
-        "federal"
-      ],
-      "title": "Dia 25/05/2026",
-      "updatedAt": "27/04/2026 16h58",
-      "hash": "170a5067b26495214af317f7f9a9d503287f039433e190b5350d3d34c78ba525",
-      "snippet": "Dia 25/05/2026 — Receita Federal Ir para o Conteúdo 1 Ir para a Página Inicial 2 Ir para o menu de Navegação 3 Ir para a Busca 4 Ir para o Mapa do site 5 Atenção! Seu navegador não pode executar javascript. Alguns recursos podem não funcionar corretamente. --\u003E Abrir menu principal de navegação Nome do site --\u003E Receita Federal Termos mais buscados Desenrola B",
-      "changeType": "content-changed",
-      "previousCheckedAt": "2026-11-15T17:14:25.096Z",
-      "previousUpdatedAt": "27/04/2026 16h58"
-    },
-    {
-      "id": "rf-dia-29-maio-2026",
-      "name": "Receita Federal - Vencimentos 29/05/2026",
-      "authority": "Receita Federal",
-      "url": "https://www.gov.br/receitafederal/pt-br/assuntos/agenda-tributaria/2026/maio/dia-29-05-2026",
-      "affects": [
-        "IRPJ",
-        "CSLL",
-        "Lucro Real",
-        "Lucro Presumido",
-        "DIRPF"
-      ],
-      "title": "Dia 29/05/2026",
-      "updatedAt": "27/04/2026 16h58",
-      "hash": "63383fc34a9c691b5ec1bc4a0badd4810117ba5f860558df37165dbd6d329e6a",
-      "snippet": "30/04/2026) DARF -- / -- Lei nº 7.713/88 Art. 7º 4600 IRRF Ganhos de capital na alienação de bens e direitos Mês Anterior (30/04/2026) DARF DIRPF Anual / -- Lei nº 7.713/88 Art. 2º 8523 IRRF Ganhos de Capital na Alienação de Bens e Direitos Localizados no Exterior Mês Anterior (30/04/2026) DARF -- / -- Lei nº 7.713/88 Art. 2º 6015 IRRF Ganhos líquidos em ope",
-      "changeType": "content-changed",
-      "previousCheckedAt": "2026-11-15T17:14:25.096Z",
-      "previousUpdatedAt": "27/04/2026 16h58"
-    },
-    {
-      "id": "rf-simples-prorrogacao-mg-2026",
-      "name": "Receita Federal - Prorrogacao Simples Nacional MG 2026",
-      "authority": "Receita Federal",
-      "url": "https://www.gov.br/receitafederal/pt-br/assuntos/noticias/2026/marco/simples-nacional-prazos-de-tributos-sao-prorrogados-para-contribuintes-de-municipios-mineiros-atingidos-por-fortes-chuvas",
-      "affects": [
-        "Simples Nacional",
-        "MEI",
-        "SIMEI",
-        "PGDAS-D",
-        "prorrogacao"
-      ],
-      "title": "Simples Nacional: prazos de tributos são prorrogados para contribuintes de municípios mineiros atingidos por fortes chuvas",
-      "updatedAt": "28/10/2026 10h15",
-      "hash": "cd8bd1dd23addee5d1b21c81acb80451a556995a58535863fd3e4d651c01493b",
-      "snippet": "Simples Nacional: prazos de tributos são prorrogados para contribuintes de municípios mineiros atingidos por fortes chuvas — Receita Federal Ir para o Conteúdo 1 Ir para a Página Inicial 2 Ir para o menu de Navegação 3 Ir para a Busca 4 Ir para o Mapa do site 5 Atenção! Seu navegador não pode executar javascript. Alguns recursos podem não funcionar corretame",
-      "changeType": "content-changed",
-      "previousCheckedAt": "2026-11-15T17:14:25.096Z",
-      "previousUpdatedAt": "28/10/2026 10h15"
+      "previousCheckedAt": "2026-11-16T20:31:36.959Z",
+      "previousUpdatedAt": null
     }
   ],
   "errors": [
