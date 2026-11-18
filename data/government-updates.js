@@ -1,43 +1,7 @@
 window.GOVERNMENT_UPDATES = {
-  "checkedAt": "2026-11-17T19:12:30.821Z",
-  "hasChanges": true,
-  "changes": [
-    {
-      "id": "rf-agenda-maio-2026",
-      "name": "Receita Federal - Agenda Tributaria Maio/2026",
-      "authority": "Receita Federal",
-      "url": "https://www.gov.br/receitafederal/pt-br/assuntos/agenda-tributaria/2026/maio",
-      "affects": [
-        "agenda tributaria",
-        "federal",
-        "prazos"
-      ],
-      "title": "Agenda Tributária",
-      "updatedAt": "26/05/2026 22h28",
-      "hash": "28b3ad8dec7f663251106f9ad3c7669c8148cb92779d1624d421c0c27a10e36b",
-      "snippet": "Agenda Tributária — Receita Federal Ir para o Conteúdo 1 Ir para a Página Inicial 2 Ir para o menu de Navegação 3 Ir para a Busca 4 Ir para o Mapa do site 5 Atenção! Seu navegador não pode executar javascript. Alguns recursos podem não funcionar corretamente. --\u003E Abrir menu principal de navegação Nome do site --\u003E Receita Federal Termos mais buscados Desenrol",
-      "changeType": "content-changed",
-      "previousCheckedAt": "2026-11-16T20:31:36.959Z",
-      "previousUpdatedAt": "26/05/2026 22h28"
-    },
-    {
-      "id": "mte-fgts-digital",
-      "name": "MTE - FGTS Digital",
-      "authority": "Ministerio do Trabalho e Emprego",
-      "url": "https://www.gov.br/trabalho-e-emprego/pt-br/servicos/empregador/fgtsdigital",
-      "affects": [
-        "FGTS Digital",
-        "trabalhista"
-      ],
-      "title": "FGTS Digital",
-      "updatedAt": null,
-      "hash": "012ba624420232dbc1b85e333ffafb97b49affa0efa90e16ed784cf38b70ede8",
-      "snippet": "FGTS Digital — Ministério do Trabalho e Emprego Ir para o Conteúdo 1 Ir para a Página Inicial 2 Ir para o menu de Navegação 3 Ir para a Busca 4 Ir para o Mapa do site 5 Atenção! Seu navegador não pode executar javascript. Alguns recursos podem não funcionar corretamente. --\u003E Abrir menu principal de navegação Nome do site --\u003E Ministério do Trabalho e Emprego",
-      "changeType": "content-changed",
-      "previousCheckedAt": "2026-11-16T20:31:36.959Z",
-      "previousUpdatedAt": null
-    }
-  ],
+  "checkedAt": "2026-11-18T18:52:54.345Z",
+  "hasChanges": false,
+  "changes": [],
   "errors": [
     {
       "id": "govbr-mei-das",
@@ -47,5 +11,5 @@ window.GOVERNMENT_UPDATES = {
       "message": "HTTP 404"
     }
   ],
-  "message": "Fontes oficiais tiveram alteracoes desde a ultima verificacao. Revise os links antes de atualizar prazos."
+  "message": "Nenhuma mudanca oficial detectada desde a ultima verificacao."
 };
